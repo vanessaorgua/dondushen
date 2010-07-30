@@ -17,39 +17,37 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
 
     QCoreApplication::setOrganizationName("Rabitsa");
-    QCoreApplication::setApplicationName("aparat");
+    QCoreApplication::setApplicationName("satur");
 
     QSettings set;
-    set.setValue("/db/db","aparat");
+    set.setValue("/db/db","satur");
 
 
     QVector<RxModbus*> r;
     QVector<IoDev*> src; // джерела даних.
 
-    for(int i=0;i<3;++i)
     {
         RxModbus *t= new RxModbus;
-        t->setObjectName(QString("ap_%1").arg(i+1));
-        t->loadList(":/text/list.txt");
-        t->setHostName(QString("192.168.0.%1").arg(i+70));
-        qDebug() << QString("192.168.0.%1").arg(i+70);
+        t->setObjectName("satur1");
+        t->loadList(":/text/list1.txt");
+        t->setHostName("10.0.1.1");
         t->setPort(502);
         r << t;
         src << t;
     }
-
+{
         RxModbus *t= new RxModbus;
-        t->setObjectName("common");
+        t->setObjectName("satur2");
         t->loadList(":/text/list2.txt");
-        t->setHostName("192.168.0.73");
+        t->setHostName("10.0.1.2");
         t->setPort(502);
         r << t;
         src << t;
+ }
 
-
-    Logging l(src,10010); // писалка історіх
+    Logging l(src,5000); // писалка історіх
     QStringList tables;
-    tables << "ap_1" << "ap_2" << "ap_3" << "trend" ;
+    tables <<  "trend1" << "trend2" ;
     l.setTables(tables);
 
     IoNetServer s(src); // мережевий інтерфейс
@@ -60,7 +58,7 @@ int main(int argc, char *argv[])
     //QObject::connect(&r,SIGNAL(updateData()),&al,SLOT(checkAlert()));
     //QObject::connect(&al,SIGNAL(newAlert(QString)),&s,SLOT(sendAlert(QString)));
 
-    for(int i=0;i<4;++i)
+    for(int i=0;i<2;++i)
     {
         QObject::connect(r[i],SIGNAL(Alert(QString)),&s,SLOT(sendAlert(QString)));
         r[i]->start();
