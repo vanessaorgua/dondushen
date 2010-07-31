@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
 
     {
         RxModbus *t= new RxModbus;
+
         t->setObjectName("satur1");
         t->loadList(":/text/list1.txt");
         t->setHostName("10.0.1.1");
@@ -35,7 +36,7 @@ int main(int argc, char *argv[])
         r << t;
         src << t;
     }
-{
+  {
         RxModbus *t= new RxModbus;
         t->setObjectName("satur2");
         t->loadList(":/text/list2.txt");
@@ -43,7 +44,7 @@ int main(int argc, char *argv[])
         t->setPort(502);
         r << t;
         src << t;
- }
+   }
 
     Logging l(src,5000); // писалка історіх
     QStringList tables;
