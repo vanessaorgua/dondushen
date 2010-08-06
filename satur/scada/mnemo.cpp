@@ -9,9 +9,6 @@
 
 // унікальні діалогові вікна
 #include "dlgpumpctrl.h"
-#include "dlgsusctrl.h"
-#include "dlgcessctrl.h"
-#include "dlgcessbleding.h"
 #include "dlgvbctrl.h"
 #include <QVBoxLayout>
 #include <QPalette>
@@ -54,9 +51,6 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QLabel(p), m_ui(new Ui::mnemo),s(sr
 
     connect(m_ui->s_cI_14,SIGNAL(clicked()),this,SLOT(slotCallPumpCtrl()));
     connect(m_ui->s_cI_17,SIGNAL(clicked()),this,SLOT(slotCallPumpCtrl()));
-    connect(m_ui->s_cI_09,SIGNAL(clicked()),this,SLOT(slotCallQ09()));
-    connect(m_ui->s_cI_10,SIGNAL(clicked()),this,SLOT(slotCallQ10()));
-    connect(m_ui->s_cX_17,SIGNAL(clicked()),this,SLOT(slotCallX_17()));
 
     s_cI    << m_ui->s_cI_01
             << m_ui->s_cI_02
@@ -449,25 +443,6 @@ void Mnemo::slotCallPumpCtrl()
     }
 
     dlgPumpCtrl p(*s[0],v,this);
-    p.exec();
-}
-
-
-void Mnemo::slotCallQ10()
-{
-    dlgSusCtrl p(*s[0],this);
-    p.exec();
-}
-
-void Mnemo::slotCallQ09()
-{
-    dlgCessCtrl p(*s[0],this);
-    p.exec();
-}
-
-void Mnemo::slotCallX_17()
-{
-    dlgCessBleding  p(*s[0],this);
     p.exec();
 }
 

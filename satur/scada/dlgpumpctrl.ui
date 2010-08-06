@@ -160,7 +160,7 @@ QCheckBox:indicator
 
  QSlider::handle:vertical {
 	
-	image: url(:/slider/pict/SP_1.png);
+	image: url(:/pict/SP_3.png);
  }
 </string>
          </property>
@@ -215,7 +215,7 @@ QCheckBox:indicator
  }
 
  QSlider::handle:vertical {
-	image: url(:/slider/pict/SPR_1.png);
+	image: url(:/pict/SPR_1.png);
  }
 </string>
          </property>
@@ -407,7 +407,9 @@ QCheckBox:indicator
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="mnemo/mnemo.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>Exit</sender>

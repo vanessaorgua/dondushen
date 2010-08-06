@@ -32,9 +32,6 @@ public slots:
     void updateTrendChart(); // поновлення графіків
     void slotCallReg();
     void slotCallPumpCtrl();
-    void slotCallQ09();
-    void slotCallQ10();
-    void slotCallX_17();
     void slotCallVb();
 private:
     Ui::mnemo *m_ui;

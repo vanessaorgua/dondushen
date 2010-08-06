@@ -54,8 +54,8 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../../../lib/picture.qrc">
-          <normaloff>:/butons/pict/klapan_diskrette_vert_off_na_25x46.png</normaloff>:/butons/pict/klapan_diskrette_vert_off_na_25x46.png</iconset>
+         <iconset resource="mnemo/mnemo.qrc">
+          <normaloff>:/pict/klapan_diskrette_vert_off_na_25x46.png</normaloff>:/pict/klapan_diskrette_vert_off_na_25x46.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -76,12 +76,12 @@ max-height: 26px;
 }
 QCheckBox:checked
 {
-	image: url(:/butons/pict/bool_green_true_48x48.png);
+	image: url(:/pict/bool_green_true_48x48.png);
 }
 
 QCheckBox:unchecked
 {
-	image: url(:/butons/pict/bool_green_false_48x48.png);
+	image: url(:/pict/bool_green_false_48x48.png);
 }
 
 QCheckBox:indicator
@@ -166,7 +166,7 @@ QCheckBox:indicator
   </layout>
  </widget>
  <resources>
-  <include location="../../../lib/picture.qrc"/>
+  <include location="mnemo/mnemo.qrc"/>
  </resources>
  <connections>
   <connection>

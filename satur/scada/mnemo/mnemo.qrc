@@ -1,5 +1,17 @@
 <RCC>
   <qresource prefix="/mnemo">
+    <file>CessPool.svg</file>
     <file>mnemo.svg</file>
+    <file>pumpCtrl.svg</file>
+  </qresource>
+  <qresource>
+    <file>../../../../pict/bool_green_false_48x48.png</file>
+    <file>../../../../pict/bool_green_true_48x48.png</file>
+    <file>../../../../pict/SP_1.png</file>
+    <file>../../../../pict/klapan_diskrette_vert_off_na_25x46.png</file>
+    <file>../../../../pict/klapan_diskrette_vert_on_na_25x26.png</file>
+    <file>../../../../pict/SP_2.png</file>
+    <file>../../../../pict/SP_3.png</file>
+    <file>../../../../pict/SPR_1.png</file>
   </qresource>
 </RCC>

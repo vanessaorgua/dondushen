@@ -18,9 +18,6 @@ HEADERS += mainform.h \
     history.h \
     alertviewdialog.h \
     dlgpumpctrl.h \
-    dlgsusctrl.h \
-    dlgcessctrl.h \
-    dlgcessbleding.h \
     dlgbledingsetup.h \
     dlgvbctrl.h
 FORMS += mainform.ui \
@@ -30,9 +27,6 @@ FORMS += mainform.ui \
     history.ui \
     alertviewdialog.ui \
     dlgpumpctrl.ui \
-    dlgsusctrl.ui \
-    dlgcessctrl.ui \
-    dlgcessbleding.ui \
     dlgbledingsetup.ui \
     dlgvbctrl.ui
 SOURCES += main.cpp \
@@ -42,14 +36,9 @@ SOURCES += main.cpp \
     history.cpp \
     alertviewdialog.cpp \
     dlgpumpctrl.cpp \
-    dlgsusctrl.cpp \
-    dlgcessctrl.cpp \
-    dlgcessbleding.cpp \
     dlgbledingsetup.cpp \
     dlgvbctrl.cpp
 RESOURCES += mnemo/mnemo.qrc \
-    ../../../lib/picture.qrc \
-    ../../../pict/lib/valves.qrc \
     text.qrc
 MOC_DIR = build
 OBJECTS_DIR = build
