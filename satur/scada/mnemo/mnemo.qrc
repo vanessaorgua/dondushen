@@ -4,7 +4,33 @@
     <file>mnemo.svg</file>
     <file>pumpCtrl.svg</file>
   </qresource>
+  <qresource prefix="buttons">
+    <file>../../../../pict/bleding_25x34.png</file>
+    <file>../../../../pict/setup_32x32.png</file>
+    <file>../../../../pict/alarm_32x32.png</file>
+    <file>../../../../pict/exit_32x32.png</file>
+    <file>../../../../pict/calendar_48x48.png</file>
+    <file>../../../../pict/logo_32x32.png</file>
+    <file>../../../../pict/thrend_32x32.png</file>
+  </qresource>
   <qresource>
+    <file>../../../../pict/hand_18x20.png</file>
+    <file>../../../../pict/lamp_g_16x16.png</file>
+    <file>../../../../pict/lamp_r_16x16.png</file>
+    <file>../../../../pict/lib/valve_green_20x32.png</file>
+    <file>../../../../pict/lib/valve_off_20x32.png</file>
+    <file>../../../../pict/lib/lamp_off_16x16.png</file>
+    <file>../../../../pict/lib/lamp_green_16x16.png</file>
+    <file>../../../../pict/pump_l_g_25x29.png</file>
+    <file>../../../../pict/pump_r_r_25x29.png</file>
+    <file>../../../../pict/pump_r_g_25x29.png</file>
+    <file>../../../../pict/pump_l_r_25x29.png</file>
+    <file>../../../../pict/klapan_analog_horiz_off_28x41.png</file>
+    <file>../../../../pict/klapan_analog_horiz_on_28x41.png</file>
+    <file>../../../../pict/klapan_analog_horiz_r_off_28x41.png</file>
+    <file>../../../../pict/klapan_analog_horiz_r_on_28x41.png</file>
+    <file>../../../../pict/klapan_analog_vert_off_28x41.png</file>
+    <file>../../../../pict/klapan_analog_vert_on_28x41.png</file>
     <file>../../../../pict/bool_green_false_48x48.png</file>
     <file>../../../../pict/bool_green_true_48x48.png</file>
     <file>../../../../pict/SP_1.png</file>

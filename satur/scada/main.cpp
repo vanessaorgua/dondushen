@@ -42,9 +42,9 @@ int main(int argc,char **argv)
 
     //QObject::connect(mainForm->Exit,SIGNAL(clicked()),&main,SLOT(close()));
 
-    if(QApplication::desktop()->size().width()>1280 && QApplication::desktop()->size().height()> 1024)
+    if(QApplication::desktop()->size().width()>1680 && QApplication::desktop()->size().height()> 1050)
     {
-        main.resize(1280,1024);
+        main.resize(1680,1050);
         main.show();
     }
     else

@@ -1,7 +1,7 @@
 #ifndef __MNEMO_H__
 #define __MNEMO_H__
 
-#include <QLabel>
+#include <QWidget>
 #include <QVector>
 
 class TrendChart;
@@ -19,7 +19,7 @@ namespace Ui {
     class mnemo;
 }
 
-class Mnemo: public QLabel
+class Mnemo: public QWidget
 {
     Q_OBJECT
 public:

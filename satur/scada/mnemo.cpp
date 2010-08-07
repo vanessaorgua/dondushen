@@ -14,13 +14,13 @@
 #include <QPalette>
 #include <QTimer>
 
-Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QLabel(p), m_ui(new Ui::mnemo),s(src)
+Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QWidget(p), m_ui(new Ui::mnemo),s(src)
 {
     m_ui->setupUi(this);
 
     connect(&s,SIGNAL(updateDataRaw()),this,SLOT(updateDataRaw())); // при отриманні нових даних, засвітити їх на картинці
     connect(&s,SIGNAL(updateDataScaled()),this,SLOT(updateDataScaled())); // при отриманні нових даних, засвітити їх на картинці
-
+/*
     QVector<QPushButton*> pbc;
     pbc
             << m_ui->s_cX_01
@@ -192,7 +192,7 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QLabel(p), m_ui(new Ui::mnemo),s(sr
                 << m_ui->s_en_p_07
                 << m_ui->s_en_p_08;
 
-/*
+
                 << m_ui->s_I_01
                 << m_ui->s_I_02
                 << m_ui->s_I_03
@@ -200,7 +200,7 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QLabel(p), m_ui(new Ui::mnemo),s(sr
                 << m_ui->s_I_05
                 << m_ui->s_I_06
                 << m_ui->s_I_07
-                << m_ui->s_I_08 */
+                << m_ui->s_I_08
 
         pb
             << m_ui->s_pV_19
@@ -240,7 +240,7 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QLabel(p), m_ui(new Ui::mnemo),s(sr
         f[i]->setLayout(vbl);
         trc << t;
     }
-
+*/
     // це сильно константне рішення
     QStringList stl;
     // 1 вапно на дефекацію
@@ -319,22 +319,23 @@ void Mnemo::updateDataRaw()
                 ?":/valves/valve_green_20x32.png":":/valves/valve_off_20x32.png")));
     }
 
-    m_ui->s_cI_10->setIcon(QIcon(QPixmap(s[0]->getValue16("I_10")
-                ?":/valves/valve_green_20x32.png":":/valves/valve_off_20x32.png")));
+//    m_ui->s_cI_10->setIcon(QIcon(QPixmap(s[0]->getValue16("I_10")
+//                ?":/valves/valve_green_20x32.png":":/valves/valve_off_20x32.png")));
 
-    m_ui->s_cI_14->setIcon(QIcon(QPixmap(s[0]->getValue16("I_14")
-                ?":/butons/pict/lib/pump_green_26x30.png":":/butons/pict/lib/pump_off_26x30.png")));
+//    m_ui->s_cI_14->setIcon(QIcon(QPixmap(s[0]->getValue16("I_14")
+//                ?":/butons/pict/lib/pump_green_26x30.png":":/butons/pict/lib/pump_off_26x30.png")));
 
-    m_ui->s_cI_17->setIcon(QIcon(QPixmap(s[0]->getValue16("I_17")
-                ?":/butons/pict/lib/pump_green_26x30.png":":/butons/pict/lib/pump_off_26x30.png")));
+//    m_ui->s_cI_17->setIcon(QIcon(QPixmap(s[0]->getValue16("I_17")
+//                ?":/butons/pict/lib/pump_green_26x30.png":":/butons/pict/lib/pump_off_26x30.png")));
 
     // індикація дискретних сигналів ЧП насосів
+/*
     QVector<QLineEdit*> s_drv;
         s_drv <<    m_ui->s_V_39
             << m_ui->s_V_40
             << m_ui->s_V_43
             << m_ui->s_V_44;
-
+*/
 
     QStringList t_w;
     t_w << "I_19"
@@ -365,13 +366,14 @@ void Mnemo::updateDataRaw()
                 pal.setColor(QPalette::Base,Qt::cyan);
             }
         }
-        s_drv[i]->setPalette(pal);
+        //s_drv[i]->setPalette(pal);
     }
 
 }
 
 void Mnemo::updateDataScaled() // слот обновляє дані на мнемосхемі
 {
+    /*
     int l=0,f=0; // довжина та кількість знаків після коми
     foreach(QLineEdit *p,le)
     {
@@ -392,11 +394,12 @@ void Mnemo::updateDataScaled() // слот обновляє дані на мне
     {
         p->setText(QString("%1").arg(s[0]->getValueScaled(p->objectName().right(p->objectName().size()-2)),3,'f',0));
     }
-
+*/
 }
 
 void Mnemo::updateTrendChart() // поновлення графіків
 {
+/*
     QVector<double> v;
     int i=0;
     foreach(QStringList str,trChTags)
@@ -410,6 +413,7 @@ void Mnemo::updateTrendChart() // поновлення графіків
         trc[i++]->addPoint(v);
 
     }
+*/
 }
 
 

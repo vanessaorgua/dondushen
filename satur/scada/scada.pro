@@ -40,6 +40,7 @@ SOURCES += main.cpp \
     dlgvbctrl.cpp
 RESOURCES += mnemo/mnemo.qrc \
     text.qrc
+
 MOC_DIR = build
 OBJECTS_DIR = build
 UI_DIR = build
@@ -48,6 +49,7 @@ RCC_DIR = build
 # OTHER_FILES += test_map.txt \
 # list.txt \
 # filters_uk.qm
+
 QMAKE_LIBDIR += ../../../lib
 LIBS += -lrcada_client
 INCLUDEPATH += ../../../lib/include

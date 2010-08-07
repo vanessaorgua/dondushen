@@ -26,7 +26,7 @@
    <string>Scada</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="../../../lib/picture.qrc">
+   <iconset>
     <normaloff>:/butons/pict/logo_32x32.png</normaloff>:/butons/pict/logo_32x32.png</iconset>
   </property>
   <layout class="QGridLayout">
@@ -45,8 +45,8 @@
       </size>
      </property>
      <property name="icon">
-      <iconset resource="../../../lib/picture.qrc">
-       <normaloff>:/butons/pict/alarm_32x32.png</normaloff>:/butons/pict/alarm_32x32.png</iconset>
+      <iconset resource="mnemo/mnemo.qrc">
+       <normaloff>:/buttons/pict/alarm_32x32.png</normaloff>:/buttons/pict/alarm_32x32.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -71,8 +71,8 @@
       </size>
      </property>
      <property name="icon">
-      <iconset resource="../../../lib/picture.qrc">
-       <normaloff>:/butons/pict/thrend_32x32.png</normaloff>:/butons/pict/thrend_32x32.png</iconset>
+      <iconset resource="mnemo/mnemo.qrc">
+       <normaloff>:/buttons/pict/thrend_32x32.png</normaloff>:/buttons/pict/thrend_32x32.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -82,7 +82,7 @@
      </property>
     </widget>
    </item>
-   <item row="8" column="0">
+   <item row="5" column="0">
     <widget class="QPushButton" name="About">
      <property name="minimumSize">
       <size>
@@ -97,8 +97,8 @@
       </size>
      </property>
      <property name="icon">
-      <iconset resource="../../../lib/picture.qrc">
-       <normaloff>:/butons/pict/logo_32x32.png</normaloff>:/butons/pict/logo_32x32.png</iconset>
+      <iconset resource="mnemo/mnemo.qrc">
+       <normaloff>:/buttons/pict/logo_32x32.png</normaloff>:/buttons/pict/logo_32x32.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -108,7 +108,7 @@
      </property>
     </widget>
    </item>
-   <item row="9" column="0">
+   <item row="6" column="0">
     <widget class="QPushButton" name="Exit">
      <property name="minimumSize">
       <size>
@@ -126,8 +126,8 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset resource="../../../lib/picture.qrc">
-       <normaloff>:/butons/pict/exit_32x32.png</normaloff>:/butons/pict/exit_32x32.png</iconset>
+      <iconset resource="mnemo/mnemo.qrc">
+       <normaloff>:/buttons/pict/exit_32x32.png</normaloff>:/buttons/pict/exit_32x32.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -137,7 +137,7 @@
      </property>
     </widget>
    </item>
-   <item row="7" column="0">
+   <item row="4" column="0">
     <spacer>
      <property name="orientation">
       <enum>Qt::Vertical</enum>
@@ -262,8 +262,8 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset resource="../../../lib/picture.qrc">
-       <normaloff>:/butons/pict/setup_32x32.png</normaloff>:/butons/pict/setup_32x32.png</iconset>
+      <iconset resource="mnemo/mnemo.qrc">
+       <normaloff>:/buttons/pict/setup_32x32.png</normaloff>:/buttons/pict/setup_32x32.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -273,7 +273,7 @@
      </property>
     </widget>
    </item>
-   <item row="1" column="1" rowspan="9">
+   <item row="1" column="1" rowspan="6">
     <widget class="QScrollArea" name="scrollArea">
      <property name="frameShape">
       <enum>QFrame::NoFrame</enum>
@@ -296,7 +296,7 @@
      </widget>
     </widget>
    </item>
-   <item row="6" column="0">
+   <item row="3" column="0">
     <widget class="QPushButton" name="bnBleding">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
@@ -320,118 +320,13 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset resource="../../../lib/picture.qrc">
-       <normaloff>:/butons/pict/bleding_25x34.png</normaloff>:/butons/pict/bleding_25x34.png</iconset>
+      <iconset resource="mnemo/mnemo.qrc">
+       <normaloff>:/buttons/pict/bleding_25x34.png</normaloff>:/buttons/pict/bleding_25x34.png</iconset>
      </property>
      <property name="iconSize">
       <size>
-       <width>25</width>
-       <height>34</height>
-      </size>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="0">
-    <widget class="QPushButton" name="bnMdef">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>42</width>
-       <height>42</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>42</width>
-       <height>42</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset resource="../../../lib/picture.qrc">
-       <normaloff>:/butons/pict/mdef_39x22.png</normaloff>:/butons/pict/mdef_39x22.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>25</width>
-       <height>34</height>
-      </size>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="0">
-    <widget class="QPushButton" name="bn1sat">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>42</width>
-       <height>42</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>42</width>
-       <height>42</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset resource="../../../lib/picture.qrc">
-       <normaloff>:/butons/pict/1sat_27x33.png</normaloff>:/butons/pict/1sat_27x33.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>25</width>
-       <height>34</height>
-      </size>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="0">
-    <widget class="QPushButton" name="bn2sat">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>42</width>
-       <height>42</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>42</width>
-       <height>42</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset resource="../../../lib/picture.qrc">
-       <normaloff>:/butons/pict/2sat_27x3.png</normaloff>:/butons/pict/2sat_27x3.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>25</width>
-       <height>34</height>
+       <width>32</width>
+       <height>32</height>
       </size>
      </property>
     </widget>
@@ -439,7 +334,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../../../lib/picture.qrc"/>
+  <include location="mnemo/mnemo.qrc"/>
  </resources>
  <connections/>
 </ui>
