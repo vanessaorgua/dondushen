@@ -355,7 +355,7 @@ void Mnemo::updateTrendChart() // поновлення графіків
 
 void Mnemo::slotCallReg()
 {
-    if(sender()->objectName().left(1)=="bb")
+    if(sender()->objectName().left(1)=="b")
     {
         RpanelReg p(*s[0],sender()->objectName().right(2).toInt()-1,this,":/text/reg_1.txt");
         p.exec();
