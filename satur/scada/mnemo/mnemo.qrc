@@ -4,6 +4,12 @@
     <file>mnemo.svg</file>
     <file>pumpCtrl.svg</file>
   </qresource>
+  <qresource prefix="slider">
+    <file>../../../../pict/SP_1.png</file>
+    <file>../../../../pict/SP_2.png</file>
+    <file>../../../../pict/SP_3.png</file>
+    <file>../../../../pict/SPR_1.png</file>
+  </qresource>
   <qresource prefix="buttons">
     <file>../../../../pict/bleding_25x34.png</file>
     <file>../../../../pict/setup_32x32.png</file>

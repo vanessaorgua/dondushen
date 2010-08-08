@@ -20,208 +20,166 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QWidget(p), m_ui(new Ui::mnemo),s(s
 
     connect(&s,SIGNAL(updateDataRaw()),this,SLOT(updateDataRaw())); // при отриманні нових даних, засвітити їх на картинці
     connect(&s,SIGNAL(updateDataScaled()),this,SLOT(updateDataScaled())); // при отриманні нових даних, засвітити їх на картинці
-/*
-    QVector<QPushButton*> pbc;
-    pbc
-            << m_ui->s_cX_01
-            << m_ui->s_cX_02
-            << m_ui->s_cX_03
-            << m_ui->s_cX_04
-            << m_ui->s_cX_05
-            << m_ui->s_cX_06
-            << m_ui->s_cX_07
-            << m_ui->s_cX_08
-            << m_ui->s_cX_09
-            << m_ui->s_cX_10
-            << m_ui->s_cX_11
-            << m_ui->s_cX_12
-            << m_ui->s_cX_13
-            << m_ui->s_cX_14
-            << m_ui->s_cX_15
-            << m_ui->s_cX_16
-            << m_ui->s_cX_18
-            << m_ui->s_cX_19
-            << m_ui->s_cX_20
-            << m_ui->s_cX_21;
 
-    foreach(QPushButton *p,pbc)
+    bnX0
+            << m_ui->bb_X0_01
+            << m_ui->bb_X0_02
+            << m_ui->bb_X0_03
+            << m_ui->bb_X0_04
+            << m_ui->bb_X0_05
+            << m_ui->bb_X0_06
+            << m_ui->bb_X0_07
+            << m_ui->bb_X0_08
+            << m_ui->bb_X0_09
+            << m_ui->bb_X0_10
+
+            << m_ui->rb_X0_01
+            << m_ui->rb_X0_02
+            << m_ui->rb_X0_03
+            //<< m_ui->br_X0_04
+            << m_ui->rb_X0_05
+            << m_ui->rb_X0_06
+            << m_ui->rb_X0_07;
+
+    foreach(QPushButton *p,bnX0)
     {
         connect(p,SIGNAL(clicked()),this,SLOT(slotCallReg()));
     }
+    connect(m_ui->rb_Y_07,SIGNAL(clicked()),this,SLOT(slotCallPumpCtrl()));
 
-    connect(m_ui->s_cI_14,SIGNAL(clicked()),this,SLOT(slotCallPumpCtrl()));
-    connect(m_ui->s_cI_17,SIGNAL(clicked()),this,SLOT(slotCallPumpCtrl()));
+    bnBl
+            << m_ui->rb_X_08
+            << m_ui->rb_X_09
+            << m_ui->rb_X_10
+            << m_ui->rb_X_11
+            << m_ui->rb_X_12
+            << m_ui->rb_X_13 ;
 
-    s_cI    << m_ui->s_cI_01
-            << m_ui->s_cI_02
-            << m_ui->s_cI_03
-            << m_ui->s_cI_04
-            << m_ui->s_cI_05
-            << m_ui->s_cI_06
-            << m_ui->s_cI_07
-            << m_ui->s_cI_08;
-    foreach(QPushButton *p,s_cI)
+    foreach(QPushButton *p,bnBl)
     {
         connect(p,SIGNAL(clicked()),this,SLOT(slotCallVb()));
     }
 
-    s_cI    << m_ui->s_cI_09;
 
+    b_lcd
+            << m_ui->bd_V_01
+            << m_ui->bd_V_02
+            << m_ui->bd_V_03
+            << m_ui->bd_V_04
+            << m_ui->bd_V_05
+            << m_ui->bd_V_06
+            << m_ui->bd_V_07
+            << m_ui->bd_V_08
+            << m_ui->bd_V_09
+            << m_ui->bd_V_10
+            << m_ui->bd_V_11
+            << m_ui->bd_V_12
+            << m_ui->bd_V_13
+            << m_ui->bd_V_14
+            << m_ui->bd_V_15
+            << m_ui->bd_V_16;
+    r_lcd
+            << m_ui->rd_V_01
+            << m_ui->rd_V_02
+            << m_ui->rd_V_03
+            << m_ui->rd_V_04
+            << m_ui->rd_V_05
+            << m_ui->rd_V_06
+            << m_ui->rd_V_07
+            //<< m_ui->r_V_08
+            << m_ui->rd_V_09
+            << m_ui->rd_V_10
+            << m_ui->rd_V_11
+            << m_ui->rd_V_12
+            << m_ui->rd_V_13
+            << m_ui->rd_V_14
+            << m_ui->rd_V_15
+            << m_ui->rd_V_16
+            << m_ui->rd_V_17
+            << m_ui->rd_V_18
+            << m_ui->rd_V_19
+            << m_ui->rd_V_20
+            << m_ui->rd_V_21;
 
-    le      << m_ui->s_V_01
-            << m_ui->s_V_02
-            << m_ui->s_V_03
-            << m_ui->s_V_04
-            << m_ui->s_V_05
-            << m_ui->s_V_06
-            << m_ui->s_V_07
-            << m_ui->s_V_08
-            << m_ui->s_V_09
-            << m_ui->s_V_10
-            << m_ui->s_V_11
-            << m_ui->s_V_12
-            << m_ui->s_V_13
-            << m_ui->s_V_14
-            << m_ui->s_V_15
-            << m_ui->s_V_16
-            << m_ui->s_V_17
-            << m_ui->s_V_18
-            << m_ui->s_V_19
-            << m_ui->s_V_20
-            << m_ui->s_V_21
-            << m_ui->s_V_22
-            << m_ui->s_V_23
-            << m_ui->s_V_24
-            << m_ui->s_V_25
-            << m_ui->s_V_26
-            << m_ui->s_V_27
-            << m_ui->s_V_28
-            << m_ui->s_V_29
-            << m_ui->s_V_30
-            << m_ui->s_V_31
-            << m_ui->s_V_32
-            << m_ui->s_V_33
-            << m_ui->s_V_34
-            << m_ui->s_V_35
-            << m_ui->s_V_36
-            << m_ui->s_V_37
-            << m_ui->s_V_38
-            << m_ui->s_V_39
-            << m_ui->s_V_40
-            << m_ui->s_V_41
-            << m_ui->s_V_42
-            << m_ui->s_V_43
-            << m_ui->s_V_44
-            << m_ui->s_V_45
-            << m_ui->s_V_46
-            << m_ui->s_V_47
-            << m_ui->s_V_48
-            << m_ui->s_V_49
-            << m_ui->s_V_50
-            << m_ui->s_V_51
-            << m_ui->s_V_52
-            << m_ui->s_V_53
-            << m_ui->s_V_54;
+    b_pb
+            << m_ui->bp_V_10
+            << m_ui->bp_V_11
+            << m_ui->bp_V_12
+            << m_ui->bp_V_13;
+    r_pb
+            << m_ui->rp_V_10
+            << m_ui->rp_V_11
+            << m_ui->rp_V_12
+            << m_ui->rp_V_13
+            << m_ui->rp_V_14
+            << m_ui->rp_V_15
+            << m_ui->rp_V_16
+            << m_ui->rp_V_21;
+    b_X0
+            << m_ui->bl_X0_01
+            << m_ui->bl_X0_02
+            << m_ui->bl_X0_03
+            << m_ui->bl_X0_04
+            << m_ui->bl_X0_05
+            << m_ui->bl_X0_06
+            << m_ui->bl_X0_07
+            << m_ui->bl_X0_08
+            << m_ui->bl_X0_09
+            << m_ui->bl_X0_10;
+    r_X0
+            << m_ui->rl_X0_01
+            << m_ui->rl_X0_02
+            << m_ui->rl_X0_03
+            //<< m_ui->lr_X0_04
+            << m_ui->rl_X0_05
+            << m_ui->rl_X0_06
+            << m_ui->rl_X0_07;
 
-        le_X << m_ui->s_X_01
-            << m_ui->s_X_02
-            << m_ui->s_X_03
-            << m_ui->s_X_04
-            << m_ui->s_X_05
-            << m_ui->s_X_06
-            << m_ui->s_X_07
-            << m_ui->s_X_08
-            << m_ui->s_X_09
-            << m_ui->s_X_10
-            << m_ui->s_X_11
-            << m_ui->s_X_12
-            << m_ui->s_X_13
-            << m_ui->s_X_14
-            << m_ui->s_X_15
-            << m_ui->s_X_16
-            << m_ui->s_X_17
-            << m_ui->s_X_18
-            << m_ui->s_X_19
-            << m_ui->s_X_20
-            << m_ui->s_X_21;
-        cb
-                << m_ui->s_Am_01
-                << m_ui->s_Am_02
-                << m_ui->s_Am_03
-                << m_ui->s_Am_04
-                << m_ui->s_Am_05
-                << m_ui->s_Am_06
-                << m_ui->s_Am_07
-                << m_ui->s_Am_08
-                << m_ui->s_Am_09
-                << m_ui->s_Am_10
-                << m_ui->s_Am_11
-                << m_ui->s_Am_12
-                << m_ui->s_Am_13
-                << m_ui->s_Am_14
-                << m_ui->s_Am_15
-                << m_ui->s_Am_16
-                << m_ui->s_Am_17
-                << m_ui->s_Am_18
-                << m_ui->s_Am_19
-                << m_ui->s_Am_20
-                << m_ui->s_Am_21
-                << m_ui->s_Am_Q_09
-                << m_ui->s_Am_Q_10
-                << m_ui->s_Am_M_14
-                << m_ui->s_Am_M_17
-                << m_ui->s_I_11
-                << m_ui->s_I_12
-                << m_ui->s_I_13
-                << m_ui->s_Q_01
-                << m_ui->s_Q_02
-                << m_ui->s_Q_03
-                << m_ui->s_Q_04
-                << m_ui->s_Q_05
-                << m_ui->s_Q_06
-                << m_ui->s_Q_07
-                << m_ui->s_Q_08
-                << m_ui->s_Q_09
-                << m_ui->s_Q_10
-                << m_ui->s_en_p_01
-                << m_ui->s_en_p_02
-                << m_ui->s_en_p_03
-                << m_ui->s_en_p_04
-                << m_ui->s_en_p_05
-                << m_ui->s_en_p_06
-                << m_ui->s_en_p_07
-                << m_ui->s_en_p_08;
-
-
-                << m_ui->s_I_01
-                << m_ui->s_I_02
-                << m_ui->s_I_03
-                << m_ui->s_I_04
-                << m_ui->s_I_05
-                << m_ui->s_I_06
-                << m_ui->s_I_07
-                << m_ui->s_I_08
-
-        pb
-            << m_ui->s_pV_19
-            << m_ui->s_pV_20
-            << m_ui->s_pV_21
-            << m_ui->s_pV_22
-            << m_ui->s_pV_24
-            << m_ui->s_pV_25
-            << m_ui->s_pV_26
-            << m_ui->s_pV_27
-            << m_ui->s_pV_28
-            << m_ui->s_pV_29
-            << m_ui->s_pV_30
-            << m_ui->s_pV_31
-            << m_ui->s_pV_33
-            << m_ui->s_pV_34
-            << m_ui->s_pV_36
-            << m_ui->s_pV_41
-            << m_ui->s_pV_42
-            << m_ui->s_pV_45
-            << m_ui->s_pV_51;
+    b_cb
+            << m_ui->bc_X_11
+            //<< m_ui->b_X_12
+            << m_ui->bc_X_13
+            << m_ui->bc_X_14
+            << m_ui->bc_X_15
+            //<< m_ui->b_X_16
+            << m_ui->bc_X_17
+            << m_ui->bc_X_18
+            << m_ui->bc_X_19
+            << m_ui->bc_X_20
+            << m_ui->bc_X_21
+            << m_ui->bc_X_22
+            << m_ui->bc_X_23
+            << m_ui->bc_X_24
+            << m_ui->bc_AM_01
+            << m_ui->bc_AM_02
+            << m_ui->bc_AM_03
+            << m_ui->bc_AM_04
+            << m_ui->bc_AM_05
+            << m_ui->bc_AM_06
+            << m_ui->bc_AM_07
+            << m_ui->bc_AM_08
+            << m_ui->bc_AM_09
+            << m_ui->bc_AM_10;
+    r_cb
+            << m_ui->rc_Y_01
+            << m_ui->rc_Y_02
+            << m_ui->rc_Y_03
+            << m_ui->rc_Y_04
+            << m_ui->rc_Y_05
+            << m_ui->rc_Y_06
+            << m_ui->rc_AM_01
+            << m_ui->rc_AM_02
+            << m_ui->rc_AM_03
+            //<< m_ui->r_AM_04
+            << m_ui->rc_AM_05
+            << m_ui->rc_AM_06
+            << m_ui->rc_AM_07
+            << m_ui->rc_en_p_01
+            << m_ui->rc_en_p_02
+            << m_ui->rc_en_p_03
+            << m_ui->rc_en_p_04
+            << m_ui->rc_en_p_05
+            << m_ui->rc_en_p_06;
 
     QVector<QFrame *> f ;
          f  << m_ui->s_Tr_01
@@ -240,7 +198,7 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QWidget(p), m_ui(new Ui::mnemo),s(s
         f[i]->setLayout(vbl);
         trc << t;
     }
-*/
+
     // це сильно константне рішення
     QStringList stl;
     // 1 вапно на дефекацію
@@ -293,14 +251,24 @@ Mnemo::~Mnemo()
 
 void Mnemo::updateDataRaw()
 {
-    foreach(QProgressBar *p,pb)
+    foreach(QProgressBar *p,b_pb)
     {
         p->setValue(s[0]->getValueFloat(p->objectName().right(p->objectName().size()-3)));
     }
 
-    foreach(QCheckBox *p,cb)
+    foreach(QProgressBar *p,r_pb)
     {
-        p->setChecked(s[0]->getValue16(p->objectName().right(p->objectName().size()-2)));
+        p->setValue(s[1]->getValueFloat(p->objectName().right(p->objectName().size()-3)));
+    }
+
+    foreach(QCheckBox *p,b_cb)
+    {
+        p->setChecked(s[0]->getValue16(p->objectName().right(p->objectName().size()-3)));
+    }
+
+    foreach(QCheckBox *p,r_cb)
+    {
+        p->setChecked(s[1]->getValue16(p->objectName().right(p->objectName().size()-3)));
     }
 
 
@@ -308,93 +276,61 @@ void Mnemo::updateDataRaw()
     pal_w.setColor(QPalette::Base,Qt::white);
     pal_y.setColor(QPalette::Base,Qt::yellow);
 
-    foreach(QLineEdit *p,le_X)
+    foreach(QLineEdit *p,b_X0)
     {
-        p->setPalette(s[0]->getValue16(QString("Amr_%1").arg(p->objectName().right(2)))?pal_w:pal_y);
+        p->setPalette(s[0]->getValue16(p->objectName().right(p->objectName().size()-3))?pal_w:pal_y);
     }
 
-    foreach(QPushButton* p,s_cI)
+    foreach(QLineEdit *p,r_X0)
+    {
+        p->setPalette(s[1]->getValue16(p->objectName().right(p->objectName().size()-3))?pal_w:pal_y);
+    }
+
+    foreach(QPushButton* p,bnBl)
     {
         p->setIcon(QIcon(QPixmap(s[0]->getValue16(p->objectName().right(p->objectName().size()-3))
-                ?":/valves/valve_green_20x32.png":":/valves/valve_off_20x32.png")));
+                ?":/pict/lib/valve_green_20x32.png":":/pict/lib/valve_off_20x32.png")));
     }
 
-//    m_ui->s_cI_10->setIcon(QIcon(QPixmap(s[0]->getValue16("I_10")
-//                ?":/valves/valve_green_20x32.png":":/valves/valve_off_20x32.png")));
+    m_ui->bb_X0_08->setIcon(QIcon(QPixmap(s[0]->getValue16("X_12")
+                ?":/pict/pump_r_g_25x29.png":":/pict/pump_r_r_25x29.png")));
 
-//    m_ui->s_cI_14->setIcon(QIcon(QPixmap(s[0]->getValue16("I_14")
-//                ?":/butons/pict/lib/pump_green_26x30.png":":/butons/pict/lib/pump_off_26x30.png")));
+    m_ui->bb_X0_10->setIcon(QIcon(QPixmap(s[0]->getValue16("X_16")
+                ?":/pict/pump_r_g_25x29.png":":/pict/pump_r_r_25x29.png")));
 
-//    m_ui->s_cI_17->setIcon(QIcon(QPixmap(s[0]->getValue16("I_17")
-//                ?":/butons/pict/lib/pump_green_26x30.png":":/butons/pict/lib/pump_off_26x30.png")));
+    m_ui->rb_Y_07->setIcon(QIcon(QPixmap(s[0]->getValue16("X_14")
+                ?":/pict/pump_l_g_25x29.png":":/pict/pump_l_r_25x29.png")));
 
-    // індикація дискретних сигналів ЧП насосів
-/*
-    QVector<QLineEdit*> s_drv;
-        s_drv <<    m_ui->s_V_39
-            << m_ui->s_V_40
-            << m_ui->s_V_43
-            << m_ui->s_V_44;
-*/
-
-    QStringList t_w;
-    t_w << "I_19"
-                << "I_25"
-                << "I_22"
-                << "I_28";
-    QStringList t_a;
-    t_a << "I_21"
-            << "I_27"
-            << "I_24"
-            << "I_30";
-
-    for(int i=0;i<4;++i)
-    {
-        QPalette pal;
-        if(s[0]->getValue16(t_a[i]))
-        {
-            pal.setColor(QPalette::Base,Qt::red);
-        }
-        else
-        {
-            if(s[0]->getValue16(t_w[i]))
-            {
-                pal.setColor(QPalette::Base,Qt::white);
-            }
-            else
-            {
-                pal.setColor(QPalette::Base,Qt::cyan);
-            }
-        }
-        //s_drv[i]->setPalette(pal);
-    }
 
 }
 
 void Mnemo::updateDataScaled() // слот обновляє дані на мнемосхемі
 {
-    /*
-    int l=0,f=0; // довжина та кількість знаків після коми
-    foreach(QLineEdit *p,le)
+    foreach(QLCDNumber *p,b_lcd)
     {
-        if(s[0]->scaleFull(p->objectName().right(p->objectName().size()-2))>20.0)
-        {
-            l=3;
-            f=0;
-        }
-        else
-        {
-            l=4;
-            f=1;
-        }
-        p->setText(QString("%1").arg(s[0]->getValueScaled(p->objectName().right(p->objectName().size()-2)),l,'f',f));
+        p->display(s[0]->getValueScaled(p->objectName().right(p->objectName().size()-3)));
     }
 
-    foreach(QLineEdit *p,le_X)
+    foreach(QLCDNumber *p,r_lcd)
     {
-        p->setText(QString("%1").arg(s[0]->getValueScaled(p->objectName().right(p->objectName().size()-2)),3,'f',0));
+        p->display(s[1]->getValueScaled(p->objectName().right(p->objectName().size()-3)));
     }
-*/
+
+    foreach(QLineEdit *p,b_X0)
+    {
+        p->setText(QString("%1").arg(s[0]->getValueScaled(p->objectName().right(p->objectName().size()-3)),3,'f',0));
+    }
+
+    foreach(QLineEdit *p,r_X0)
+    {
+        p->setText(QString("%1").arg(s[1]->getValueScaled(p->objectName().right(p->objectName().size()-3)),3,'f',0));
+    }
+
+    foreach(QLineEdit *p,r_X0)
+    {
+        p->setText(QString("%1").arg(s[1]->getValueScaled(p->objectName().right(p->objectName().size()-3)),3,'f',0));
+    }
+
 }
 
 void Mnemo::updateTrendChart() // поновлення графіків
@@ -419,8 +355,17 @@ void Mnemo::updateTrendChart() // поновлення графіків
 
 void Mnemo::slotCallReg()
 {
-    RpanelReg p(*s[0],sender()->objectName().right(2).toInt()-1,this);
-    p.exec();
+    if(sender()->objectName().left(1)=="bb")
+    {
+        RpanelReg p(*s[0],sender()->objectName().right(2).toInt()-1,this,":/text/reg_1.txt");
+        p.exec();
+    }
+    else
+    {
+        RpanelReg p(*s[1],sender()->objectName().right(2).toInt()-1,this,":/text/reg_2.txt");
+        p.exec();
+    }
+
 }
 
 void Mnemo::slotCallPumpCtrl()

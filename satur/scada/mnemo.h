@@ -8,7 +8,7 @@ class TrendChart;
 class IoNetClient;
 class QCheckBox;
 class QLineEdit;
-class QLineEdit;
+class QLCDNumber;
 class QCheckBox;
 class QProgressBar;
 class QPushButton;
@@ -38,14 +38,18 @@ private:
     IoNetClient &s;
 
 
-    QVector<QLineEdit*> le;
-    QVector<QCheckBox*> cb;
-
-    QVector<QLineEdit*> le_X;
-    QVector<QProgressBar*> pb;
+    // індикатори
+    QVector<QLCDNumber*> b_lcd,r_lcd;
+    QVector<QProgressBar*> b_pb,r_pb;
+    QVector<QCheckBox*> b_cb,r_cb;
+    QVector<QLineEdit*> b_X0,r_X0;
 
     QVector<TrendChart*> trc;
-    QVector<QPushButton*> s_cI;
+
+    QVector<QPushButton*> bnX0;
+
+    QVector<QPushButton*> bnBl;
+
     QVector<QStringList> trChTags;
 };
 
