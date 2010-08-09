@@ -278,12 +278,12 @@ void Mnemo::updateDataRaw()
 
     foreach(QLineEdit *p,b_X0)
     {
-        p->setPalette(s[0]->getValue16(p->objectName().right(p->objectName().size()-3))?pal_w:pal_y);
+        p->setPalette(s[0]->getValue16(QString("X_%1").arg(p->objectName().right(2)))?pal_w:pal_y);
     }
 
     foreach(QLineEdit *p,r_X0)
     {
-        p->setPalette(s[1]->getValue16(p->objectName().right(p->objectName().size()-3))?pal_w:pal_y);
+        p->setPalette(s[1]->getValue16(QString("X_%1").arg(p->objectName().right(2)))?pal_w:pal_y);
     }
 
     foreach(QPushButton* p,bnBl)

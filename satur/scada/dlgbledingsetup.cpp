@@ -4,6 +4,7 @@
 //#include <QTimer>
 #include <QDateTime>
 
+#define MAX_BLED 6
 dlgBledingSetup::dlgBledingSetup(IoDev &source,QWidget *parent) :
     QDialog(parent),
     ui(new Ui::dlgBledingSetup),
@@ -16,36 +17,28 @@ dlgBledingSetup::dlgBledingSetup(IoDev &source,QWidget *parent) :
             << ui->en_p_03
             << ui->en_p_04
             << ui->en_p_05
-            << ui->en_p_06
-            << ui->en_p_07
-            << ui->en_p_08;
+            << ui->en_p_06;
 
     cb_k    << ui->kr_p_01
             << ui->kr_p_02
             << ui->kr_p_03
             << ui->kr_p_04
             << ui->kr_p_05
-            << ui->kr_p_06
-            << ui->kr_p_07
-            << ui->kr_p_08;
+            << ui->kr_p_06;
 
     te_p      << ui->Tp_zd_01
             << ui->Tp_zd_02
             << ui->Tp_zd_03
             << ui->Tp_zd_04
             << ui->Tp_zd_05
-            << ui->Tp_zd_06
-            << ui->Tp_zd_07
-            << ui->Tp_zd_08;
+            << ui->Tp_zd_06;
 
     te_m        << ui->Tm_zd_01
             << ui->Tm_zd_02
             << ui->Tm_zd_03
             << ui->Tm_zd_04
             << ui->Tm_zd_05
-            << ui->Tm_zd_06
-            << ui->Tm_zd_07
-            << ui->Tm_zd_08;
+            << ui->Tm_zd_06;
 
     foreach(QTimeEdit* v,te_m)
     {
@@ -141,13 +134,11 @@ void dlgBledingSetup::updateList()
 {
     QStringList tankName        ;
     tankName << tr("6-та зона ПДБМ")
-            << tr("Теплий дефекатор")
-            << tr("Гарячий А")
-            << tr("Гарячий Б")
+            << tr("Гарячий #1")
+            << tr("Гарячий #2")
             << tr("1-й сатуратор")
             << tr("Дефекатор 2 сат.")
-            << tr("2-й сатуратор")
-            << tr("Відстійник 2-сат.");
+            << tr("2-й сатуратор");
 
     QVector<qint16> vi;
     vi << 1440 << 720 << 480 << 360 << 240  << 180 << 120;
@@ -155,7 +146,7 @@ void dlgBledingSetup::updateList()
 
     QVector<int> time;
     QVector<QString> name;
-    for(int i=0;i<8;++i)
+    for(int i=0;i<MAX_BLED;++i)
     {
         if(cb_e[i]->currentIndex()) // перевірити чи включена продувка
         {
