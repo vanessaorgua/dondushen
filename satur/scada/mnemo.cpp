@@ -357,12 +357,12 @@ void Mnemo::slotCallReg()
 {
     if(sender()->objectName().left(1)=="b")
     {
-        RpanelReg p(*s[0],sender()->objectName().right(2).toInt()-1,this,":/text/reg_1.txt");
+        RpanelReg p(*s[0],sender()->objectName().right(2).toInt()-1,this,":/text/reg_1.txt","trend1");
         p.exec();
     }
     else
     {
-        RpanelReg p(*s[1],sender()->objectName().right(2).toInt()-1,this,":/text/reg_2.txt");
+        RpanelReg p(*s[1],sender()->objectName().right(2).toInt()-1,this,":/text/reg_2.txt","trend2");
         p.exec();
     }
 
