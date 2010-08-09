@@ -8,3 +8,5 @@ V_07	V_07		Spr_07	X0_07	SP_07	SP2_07		AM_07	Rej_07	Rev_07	Kpr_07	Ti_07	Td_07	Xmi
 V_07	V_07		Spr_08	X0_08	SP_08	SP2_08		AM_08	Rej_08	Rev_08	Kpr_08	Ti_08	Td_08	Xmin_08	Xmax_08	K1_08	K2_08			Kkor_08	Витрата соку з холодн. Деф. (частотн)
 V_08	V_08		Spr_09	X0_09	SP_09	SP2_09		AM_09	Rej_09	Rev_09	Kpr_09	Ti_09	Td_09	Xmin_09	Xmax_09	K1_09	K2_09			Kkor_09	Витрата соку на дефек.2-ї сат.(клап)
 V_08	V_08		Spr_10	X0_10	SP_10	SP2_10		AM_10	Rej_10	Rev_10	Kpr_10	Ti_10	Td_10	Xmin_10	Xmax_10	K1_10	K2_10			Kkor_10	Витрата соку на дефек.2-ї сат.(част)
+V_03	V_01		Spr_11	X0_11	SP_11			AM_11	Rej_11	Rev_11	Kpr_11	Ti_11	Td_11	Xmin_11	Xmax_11	K1_11	K2_11			Kkor_11	Витрата вапн. Молока на преддеф.
+V_04	V_01		Spr_12	X0_12	SP_12			AM_12	Rej_12	Rev_12	Kpr_12	Ti_12	Td_12	Xmin_12	Xmax_12	K1_12	K2_12			Kkor_12	Витрата вап. мол. на хол. Дефекацію

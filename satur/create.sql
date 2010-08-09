@@ -92,6 +92,14 @@ SP_07 smallint default '0',
 SP_08 smallint default '0',
 SP_09 smallint default '0',
 SP_10 smallint default '0',
+AM_11 smallint default '0',
+AM_12 smallint default '0',
+Rej_11 smallint default '0',
+Rej_12 smallint default '0',
+Spr_11 smallint default '0',
+Spr_12 smallint default '0',
+X0_11 smallint default '0',
+X0_12 smallint default '0',
 primary key(Dt) )Engine = InnoDb;
 
 create table trend2 (Dt integer unsigned not null.

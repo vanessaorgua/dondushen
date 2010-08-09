@@ -195,3 +195,31 @@ Rev_07	327	Bool	300	0	-
 Rev_08	328	Bool	300	0	-	
 Rev_09	329	Bool	300	0	-	
 Rev_10	330	Bool	300	0	-	
+Rev_11	331	Bool	300	0	-
+Rev_12	332	Bool	300	0	-
+AM_11	333	Bool	300	0	-
+AM_12	334	Bool	300	0	-
+Kpr_11	335	Real	300	0	-
+Kpr_12	337	Real	300	0	-
+Ti_11	339	Real	300	0	-
+Ti_12	341	Real	300	0	-
+Td_11	343	Real	300	0	-
+Td_12	345	Real	300	0	-
+Xmin_11	347	Real	300	0	-
+Xmin_12	349	Real	300	0	-
+Xmax_11	351	Real	300	0	-
+Xmax_12	353	Real	300	0	-
+SP_11	355	Real	300	0	-
+SP_12	357	Real	300	0	-
+Kkor_11	359	Real	300	0	-
+Kkor_12	361	Real	300	0	-
+K1_11	363	Real	300	0	-
+K1_12	365	Real	300	0	-
+K2_11	367	Real	300	0	-
+K2_12	369	Real	300	0	-
+Rej_11	370	Bool	300	0	-
+Rej_12	371	Bool	300	0	-
+Spr_11	372	Real	1	1	V_03
+Spr_12	374	Real	1	1	V_04
+X0_11	376	Real	1	1	0 100	Витрата вапняного молока на переддефекацію
+X0_12	378	Real	1	1	0 100	Витрата вапняного молока на холодну дефекацію
