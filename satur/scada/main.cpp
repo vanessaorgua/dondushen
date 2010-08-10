@@ -51,6 +51,7 @@ int main(int argc,char **argv)
     {
         main.showFullScreen();
     }
+
     return app.exec();
 }
 

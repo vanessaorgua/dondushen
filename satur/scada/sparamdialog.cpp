@@ -93,7 +93,7 @@ void SParamDialog::slotSet(QString v )
     else if(sender()->objectName()=="sb_Fs")
         s.setScaleFull(tag_name[m_ui->bx_Teg->currentIndex()],v.toDouble());
     else if(sender()->objectName()=="sb_f")
-        s.sendValue(QString("kf_%1").arg(tag_name[m_ui->bx_Teg->currentIndex()]),qint16(v.toInt()));
+        s.sendValue(QString("Kf_%1").arg(tag_name[m_ui->bx_Teg->currentIndex()].right(2)),qint16(v.toInt()));
 
 }
 
@@ -101,7 +101,7 @@ void SParamDialog::selectTeg(int v)
 {
     m_ui->sb_Zs->setValue(s.scaleZero(tag_name[v]));
     m_ui->sb_Fs->setValue(s.scaleFull(tag_name[v]));
-    m_ui->sb_f->setValue(s.getValue16(QString("kf_%1").arg(tag_name[v])));
+    m_ui->sb_f->setValue(s.getValue16(QString("Kf_%1").arg(tag_name[v].right(2))));
 
     //m_ui->sb_m->setValue((double)s.getValue16(QString("m_%1").arg(tag_name[v]))/4000.0*(s.scaleFull(tag_name[v])-s.scaleZero(tag_name[v]))+s.scaleZero(tag_name[v]));
 }
