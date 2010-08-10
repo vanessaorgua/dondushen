@@ -97,48 +97,6 @@
           <enum>Qt::Vertical</enum>
          </property>
         </widget>
-        <widget class="QCheckBox" name="s_I">
-         <property name="geometry">
-          <rect>
-           <x>85</x>
-           <y>99</y>
-           <width>21</width>
-           <height>26</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QCheckBox{
-min-width: 21px;
-min-height: 26px;
-max-width: 21px;
-max-height: 26px;
-}
-QCheckBox:checked
-{
-	image: url(:/butons/pict/bool_green_true_48x48.png);
-}
-
-QCheckBox:unchecked
-{
-	image: url(:/butons/pict/bool_green_false_48x48.png);
-}
-
-QCheckBox:indicator
-{
-	background: rgba(0, 0, 0, 0);
-}
-</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-         <property name="checked">
-          <bool>false</bool>
-         </property>
-        </widget>
         <widget class="QSlider" name="s_SP_max">
          <property name="geometry">
           <rect>
@@ -261,6 +219,80 @@ QCheckBox:indicator
            <width>45</width>
            <height>24</height>
           </rect>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="X_AM">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>60</y>
+           <width>18</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QCheckBox{
+min-width: 18px;
+min-height: 20px;
+max-width: 18px;
+max-height: 20px;
+}
+QCheckBox:unchecked
+{
+	image: url(:/pict/hand_18x20.png);
+}
+QCheckBox:indicator
+{
+	background: rgba(0, 0, 0, 0);
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="s_I">
+         <property name="geometry">
+          <rect>
+           <x>88</x>
+           <y>104</y>
+           <width>16</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QCheckBox{
+min-width: 16px;
+min-height: 16px;
+max-width: 16px;
+max-height: 16px;
+}
+QCheckBox:checked
+{
+	image: url(:/pict/lamp_g_16x16.png);
+}
+
+QCheckBox:unchecked
+{
+	image: url(:/pict/lamp_r_16x16.png);
+}
+
+QCheckBox:indicator
+{
+	background: rgba(0, 0, 0, 0);
+	height: 16px;
+	width: 16px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>CheckBox</string>
          </property>
         </widget>
        </widget>

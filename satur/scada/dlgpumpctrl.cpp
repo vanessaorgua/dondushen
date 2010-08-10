@@ -13,10 +13,14 @@ dlgPumpCtrl::dlgPumpCtrl(IoDev &source, QStringList &tags,QWidget *parent) :
 {
     ui->setupUi(this);
     // ініціалізувати все
-    ui->s_SP_max->setValue(src.getValue16(t[Pc::Max]));
-    ui->s_SP_min->setValue(src.getValue16(t[Pc::Min]));
+    ui->s_SP_max->setValue(src.getValueFloat(t[Pc::Max]));
+    ui->s_SP_min->setValue(src.getValueFloat(t[Pc::Min]));
+
     ui->s_sSP_max->setValue(src.getValueScaled(t[Pc::Max]));
+    ui->s_sSP_max->setKeyboardTracking(false);
+
     ui->s_sSP_min->setValue(src.getValueScaled(t[Pc::Min]));
+    ui->s_sSP_min->setKeyboardTracking(false);
 
     ui->s_AM->setCurrentIndex(src.getValue16(t[Pc::Am])?1:0);
     ui->s_R_M->setCurrentIndex(src.getValue16(t[Pc::Q])?1:0);
@@ -62,6 +66,7 @@ void dlgPumpCtrl::slotUpdate() // в цьому слоті буде поновл
     {
         ui->s_R_M->setCurrentIndex(src.getValue16(t[Pc::Q])?1:0);
     }
+    ui->X_AM->setChecked(src.getValue16(t[Pc::X_AM]));
 }
 
 void dlgPumpCtrl::slotSetSl(int v)
@@ -71,7 +76,7 @@ void dlgPumpCtrl::slotSetSl(int v)
 
     if(sender()->objectName()=="s_SP_min")
     {
-        src.sendValue(t[Pc::Min],qint16(v));
+        src.sendValue(t[Pc::Min],(double)v);
         ui->s_sSP_min->blockSignals(true);
         ui->s_sSP_min->setValue(td/4000.0*(src.scaleFull(t[Pc::Min])-src.scaleZero(t[Pc::Min]))+src.scaleZero(t[Pc::Min]));
         ui->s_sSP_min->blockSignals(false);
@@ -80,7 +85,7 @@ void dlgPumpCtrl::slotSetSl(int v)
     }
     else
     {
-        src.sendValue(t[Pc::Max],qint16(v));
+        src.sendValue(t[Pc::Max],(double)v);
         ui->s_sSP_max->blockSignals(true);
         ui->s_sSP_max->setValue(td/4000.0*(src.scaleFull(t[Pc::Max])-src.scaleZero(t[Pc::Max]))+src.scaleZero(t[Pc::Max]));
         ui->s_sSP_max->blockSignals(false);

@@ -371,34 +371,22 @@ void Mnemo::slotCallReg()
 void Mnemo::slotCallPumpCtrl()
 {
     QStringList v;
-    if(sender()->objectName()=="s_cI_14")
-    {
-        v << "V_21"
-                << "I_14"
-                << "R_M_14"
-                << "Am_M_14"
-                << "V_21_min"
-                << "V_21_max";
-    }
-    else
-    {
-        v << "V_25"
-                << "I_17"
-                << "R_M_17"
-                << "Am_M_17"
-                << "V_25_min"
-                << "V_25_max";
+        v << "V_10"
+        << "X_15"
+        << "Y_07"
+        << "Am_Q_09"
+        << "SP_V_10_min"
+        << "SP_V_10_max"
+        << "X_14";
 
-    }
-
-    dlgPumpCtrl p(*s[0],v,this);
+    dlgPumpCtrl p(*s[1],v,this);
     p.exec();
 }
 
 
 void Mnemo::slotCallVb()
 {
-    dlgVbCtrl p(*s[0],sender()->objectName().right(2).toInt(),this);
+    dlgVbCtrl p(*s[1],sender()->objectName().right(2).toInt()-7,this);
     p.exec();
 }
 

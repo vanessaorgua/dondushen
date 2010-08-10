@@ -44,11 +44,11 @@ void dlgVbCtrl::changeEvent(QEvent *e)
 void dlgVbCtrl::slotUpdate()
 {
     ui->Q->setIcon(QIcon(
-            QPixmap(src.getValue16(QString("Q_%1").arg(nI,2,10,QChar('0')))
-                                  ?":/butons/pict/klapan_diskrette_vert_on_na_25x26.png"
-                                      :":/butons/pict/klapan_diskrette_vert_off_na_25x46.png")));
+            QPixmap(src.getValue16(QString("X_%1").arg(nI+7,2,10,QChar('0')))
+                                  ?":/pict/klapan_diskrette_vert_on_na_25x26.png"
+                                      :":/pict/klapan_diskrette_vert_off_na_25x46.png")));
 
-    ui->I->setChecked(src.getValue16(QString("I_%1").arg(nI,2,10,QChar('0'))));
+    ui->I->setChecked(src.getValue16(QString("Y_%1").arg(nI,2,10,QChar('0'))));
 }
 
 void dlgVbCtrl::slotSet(int v)
@@ -58,9 +58,9 @@ void dlgVbCtrl::slotSet(int v)
 
 void dlgVbCtrl::slotSet()
 {
-    qint16 v = src.getValue16(QString("Q_%1").arg(nI,2,10,QChar('0')))?0:-1;
-    qDebug() << v;
-    src.sendValue(QString("Q_%1").arg(nI,2,10,QChar('0')),v);
+    qint16 v = src.getValue16(QString("Y_%1").arg(nI,2,10,QChar('0')))?0:-1;
+    //qDebug() << v;
+    src.sendValue(QString("Y_%1").arg(nI,2,10,QChar('0')),v);
 }
 
 
