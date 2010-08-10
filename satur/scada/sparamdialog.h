@@ -3,7 +3,7 @@
 
 #include <QtGui/QDialog>
 
-class IoDev;
+class IoNetClient;
 
 namespace Ui {
     class SParamDialog;
@@ -12,12 +12,13 @@ namespace Ui {
 class SParamDialog : public QDialog {
     Q_OBJECT
 public:
-    SParamDialog(IoDev &src,QWidget *parent = 0);
+    SParamDialog(IoNetClient &src,QWidget *parent = 0);
     ~SParamDialog();
 
 private slots:
     void myAccept();
     void selectTeg(int v);
+    void selectPage(int v);
 
     void slotSet(QString);
 
@@ -27,10 +28,9 @@ protected:
 
 private:
     Ui::SParamDialog *m_ui;
-    IoDev &s;
+    IoNetClient &s;
 
-
-    QStringList tag_name; // список тегів, які треба налаштовувати
+    QStringList tag_name_0,tag_name_1; // список тегів, які треба налаштовувати
 };
 
 #endif // SPARAMDIALOG_H

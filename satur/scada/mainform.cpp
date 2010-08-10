@@ -107,7 +107,7 @@ void mMainForm::showMe()
 
 void mMainForm::setupParm()
 {
-    SParamDialog d(*src[0],this);
+    SParamDialog d(src,this);
     d.exec();
 }
 

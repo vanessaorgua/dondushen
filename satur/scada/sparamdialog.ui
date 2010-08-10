@@ -48,7 +48,7 @@
      </property>
      <widget class="QWidget" name="tab_1">
       <attribute name="title">
-       <string>Analog</string>
+       <string>PLC 1</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="0" column="0">
@@ -65,7 +65,7 @@
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QComboBox" name="bx_Teg"/>
+        <widget class="QComboBox" name="bx_Teg_0"/>
        </item>
        <item row="1" column="0" rowspan="2">
         <widget class="QLabel" name="label_2">
@@ -81,7 +81,7 @@
         </widget>
        </item>
        <item row="1" column="1" rowspan="2">
-        <widget class="QDoubleSpinBox" name="sb_Zs">
+        <widget class="QDoubleSpinBox" name="sb_Zs_0">
          <property name="minimum">
           <double>-1000.000000000000000</double>
          </property>
@@ -104,7 +104,7 @@
         </widget>
        </item>
        <item row="3" column="1">
-        <widget class="QDoubleSpinBox" name="sb_Fs">
+        <widget class="QDoubleSpinBox" name="sb_Fs_0">
          <property name="maximum">
           <double>1000.000000000000000</double>
          </property>
@@ -124,7 +124,7 @@
         </spacer>
        </item>
        <item row="4" column="1">
-        <widget class="QSpinBox" name="sb_f">
+        <widget class="QSpinBox" name="sb_f_0">
          <property name="minimum">
           <number>1</number>
          </property>
@@ -145,6 +145,108 @@
           <string>Dempfer</string>
          </property>
         </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>PLC 2</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_13">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Parameter name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="bx_Teg_1"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Zero scale</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QDoubleSpinBox" name="sb_Zs_1">
+         <property name="minimum">
+          <double>-1000.000000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>1000.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Full scale</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QDoubleSpinBox" name="sb_Fs_1">
+         <property name="maximum">
+          <double>1000.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Dempfer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QSpinBox" name="sb_f_1">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>291</width>
+           <height>28</height>
+          </size>
+         </property>
+        </spacer>
        </item>
       </layout>
      </widget>
