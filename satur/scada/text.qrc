@@ -4,6 +4,9 @@
         <file>../../../pict/calendar_48x48.png</file>
     </qresource>
     <qresource prefix="/">
+        <file>text/reg_1.txt</file>
+        <file>text/reg_2.txt</file>
+
         <file>text/reg101</file>
         <file>text/reg102</file>
         <file>text/reg103</file>

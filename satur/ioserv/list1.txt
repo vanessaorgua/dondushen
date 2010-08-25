@@ -161,10 +161,10 @@ K2_07	265	Real	300	0	-
 K2_08	267	Real	300	0	-	
 K2_09	269	Real	300	0	-	
 K2_10	271	Real	300	0	-	
-SP2_07	273	Real	300	0	-	
-SP2_08	275	Real	300	0	-	
-SP2_09	277	Real	300	0	-	
-SP2_10	279	Real	300	0	-	
+SP2_07	273	Real	300	1	-
+SP2_08	275	Real	300	1	-
+SP2_09	277	Real	300	1	-
+SP2_10	279	Real	300	1	-
 Xmin_01	281	Real	300	0	-	
 Xmin_02	283	Real	300	0	-	
 Xmin_03	285	Real	300	0	-	

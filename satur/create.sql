@@ -3,7 +3,7 @@ create database satur;
 
 use satur;
 
-create table trend1 (Dt integer unsigned not null.
+create table trend1 (Dt integer unsigned not null,
 V_01 smallint default '0',
 V_02 smallint default '0',
 V_03 smallint default '0',
@@ -100,9 +100,13 @@ Spr_11 smallint default '0',
 Spr_12 smallint default '0',
 X0_11 smallint default '0',
 X0_12 smallint default '0',
+SP2_07 smallint default '0',
+SP2_08 smallint default '0',
+SP2_09 smallint default '0',
+SP2_10 smallint default '0',
 primary key(Dt) )Engine = InnoDb;
 
-create table trend2 (Dt integer unsigned not null.
+create table trend2 (Dt integer unsigned not null,
 V_01 smallint default '0',
 V_02 smallint default '0',
 V_03 smallint default '0',
@@ -168,3 +172,5 @@ AM_05 smallint default '0',
 AM_06 smallint default '0',
 AM_07 smallint default '0',
 primary key(Dt) )Engine = InnoDb;
+
+grant INSERT,SELECT,UPDATE,DELETE on satur.* to 'scada'@'%';
