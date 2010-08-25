@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>531</width>
-    <height>360</height>
+    <height>383</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -33,37 +33,79 @@
         </property>
         <layout class="QVBoxLayout" name="verticalLayout">
          <item>
-          <widget class="QPushButton" name="Cf_10cf">
+          <widget class="QPushButton" name="trend1_reg101">
            <property name="text">
-            <string>Центрифуга №1</string>
+            <string>reg101</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="Cf_20cf">
+          <widget class="QPushButton" name="trend1_reg102">
            <property name="text">
-            <string>Центрифуга №2</string>
+            <string>reg102</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="Cf_30cf">
+          <widget class="QPushButton" name="trend1_reg103">
            <property name="text">
-            <string>Центрифуга №3</string>
+            <string>reg103</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="Cf_40cf">
+          <widget class="QPushButton" name="trend1_reg104">
            <property name="text">
-            <string>Центрифуга №4</string>
+            <string>reg104</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="Cf_50cf">
+          <widget class="QPushButton" name="trend1_reg105">
            <property name="text">
-            <string>Центрифуга №5</string>
+            <string>reg105</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend1_reg106">
+           <property name="text">
+            <string>reg106</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend1_reg107">
+           <property name="text">
+            <string>reg107</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend1_reg108">
+           <property name="text">
+            <string>reg108</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend1_reg109">
+           <property name="text">
+            <string>reg109</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend1_reg110">
+           <property name="text">
+            <string>reg110</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend1_reg111">
+           <property name="text">
+            <string>reg111</string>
            </property>
           </widget>
          </item>
@@ -80,6 +122,13 @@
            </property>
           </spacer>
          </item>
+         <item>
+          <widget class="QPushButton" name="trend1_reg112">
+           <property name="text">
+            <string>reg112</string>
+           </property>
+          </widget>
+         </item>
         </layout>
        </widget>
       </item>
@@ -92,6 +141,55 @@
          <enum>QFrame::Sunken</enum>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QPushButton" name="trend2_reg201">
+           <property name="text">
+            <string>reg201</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend2_reg202">
+           <property name="text">
+            <string>reg202</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend2_reg203">
+           <property name="text">
+            <string>reg203</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend2_reg204">
+           <property name="text">
+            <string>reg204</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend2_reg205">
+           <property name="text">
+            <string>reg205</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend2_reg206">
+           <property name="text">
+            <string>reg206</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend2_reg207">
+           <property name="text">
+            <string>reg207</string>
+           </property>
+          </widget>
+         </item>
          <item>
           <spacer name="verticalSpacer_2">
            <property name="orientation">
@@ -117,13 +215,6 @@
          <enum>QFrame::Sunken</enum>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_3">
-         <item>
-          <widget class="QPushButton" name="trend0trend">
-           <property name="text">
-            <string>Параметри</string>
-           </property>
-          </widget>
-         </item>
          <item>
           <spacer name="verticalSpacer_3">
            <property name="orientation">

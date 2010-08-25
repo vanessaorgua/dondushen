@@ -40,7 +40,6 @@ SOURCES += main.cpp \
     dlgvbctrl.cpp
 RESOURCES += mnemo/mnemo.qrc \
     text.qrc
-
 MOC_DIR = build
 OBJECTS_DIR = build
 UI_DIR = build
@@ -49,12 +48,10 @@ RCC_DIR = build
 # OTHER_FILES += test_map.txt \
 # list.txt \
 # filters_uk.qm
-
 QMAKE_LIBDIR += ../../../lib
 LIBS += -lrcada_client
 INCLUDEPATH += ../../../lib/include
 OTHER_FILES += text/alert.txt \
-    text/reg_1.txt \
     text/reg_2.txt
 win32:QTPLUGIN += qsvg
 win32:CONFIG += static

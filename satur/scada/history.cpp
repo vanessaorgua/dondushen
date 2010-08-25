@@ -14,12 +14,27 @@ RHistorySelect::RHistorySelect(IoDev &src,struct trendinfo *tp,QWidget *p /*=NUL
 {
     m_ui->setupUi(this);
 
-    connect(m_ui->Cf_10cf,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->Cf_20cf,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->Cf_30cf,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->Cf_40cf,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->Cf_50cf,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->trend0trend,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend1_reg101,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend1_reg102,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend1_reg103,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend1_reg104,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend1_reg105,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend1_reg106,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend1_reg107,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend1_reg108,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend1_reg109,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend1_reg110,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend1_reg111,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend1_reg112,SIGNAL(clicked()),this,SLOT(slotAccept()));
+
+    connect(m_ui->trend2_reg201,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend2_reg202,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend2_reg203,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend2_reg204,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend2_reg205,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend2_reg206,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend2_reg207,SIGNAL(clicked()),this,SLOT(slotAccept()));
+
 }
 
 RHistorySelect::~RHistorySelect()
@@ -29,7 +44,7 @@ RHistorySelect::~RHistorySelect()
 
 void RHistorySelect::slotAccept()
 {
-    QStringList fl=sender()->objectName().split('0'); // символ 0 є розподілювачам імені таблиці та імені файлу із списком полів
+    QStringList fl=sender()->objectName().split('_'); // символ 0 є розподілювачам імені таблиці та імені файлу із списком полів
     nameTrend=fl[1];
     // тут треба завантажити дані в структуру 
 

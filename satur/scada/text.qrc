@@ -4,7 +4,25 @@
         <file>../../../pict/calendar_48x48.png</file>
     </qresource>
     <qresource prefix="/">
-        <file>text/reg_1.txt</file>
-        <file>text/reg_2.txt</file>
+        <file>text/reg101</file>
+        <file>text/reg102</file>
+        <file>text/reg103</file>
+        <file>text/reg104</file>
+        <file>text/reg105</file>
+        <file>text/reg106</file>
+        <file>text/reg107</file>
+        <file>text/reg108</file>
+        <file>text/reg109</file>
+        <file>text/reg110</file>
+        <file>text/reg111</file>
+        <file>text/reg112</file>
+
+        <file>text/reg201</file>
+        <file>text/reg202</file>
+        <file>text/reg203</file>
+        <file>text/reg204</file>
+        <file>text/reg205</file>
+        <file>text/reg206</file>
+        <file>text/reg207</file>
     </qresource>
 </RCC>
