@@ -40,9 +40,16 @@ SParamDialog::SParamDialog(IoNetClient &src,QWidget *parent) :
     }
     //qDebug() << tag_name_0;
 
+    m_ui->sb_Zs_0->setKeyboardTracking(false);
+    m_ui->sb_Zs_1->setKeyboardTracking(false);
+    m_ui->sb_Fs_0->setKeyboardTracking(false);
+    m_ui->sb_Fs_1->setKeyboardTracking(false);
+    m_ui->sb_f_0->setKeyboardTracking(false);
+    m_ui->sb_f_0->setKeyboardTracking(false);
 
     connect(m_ui->bn_Ok,SIGNAL(clicked()),this,SLOT(myAccept()));
     connect(m_ui->bx_Teg_0,SIGNAL(currentIndexChanged(int)),this,SLOT(selectTeg(int)));
+    connect(m_ui->bx_Teg_1,SIGNAL(currentIndexChanged(int)),this,SLOT(selectTeg(int)));
 
     connect(m_ui->sb_Fs_0,SIGNAL(valueChanged(QString)),this,SLOT(slotSet(QString)));
     connect(m_ui->sb_Zs_0,SIGNAL(valueChanged(QString)),this,SLOT(slotSet(QString)));
@@ -137,7 +144,7 @@ void SParamDialog::slotSet(QString v )
 
 void SParamDialog::selectTeg(int v)
 {
-    if( m_ui->tabWidget->currentIndex()==0)
+    if(m_ui->tabWidget->currentIndex()==0)
     {
         if(v<m_ui->bx_Teg_0->count())
         {
@@ -150,9 +157,9 @@ void SParamDialog::selectTeg(int v)
     {
         if(v<m_ui->bx_Teg_1->count())
         {
-            m_ui->sb_Zs_1->setValue(s[0]->scaleZero(tag_name_1[v]));
-            m_ui->sb_Fs_1->setValue(s[0]->scaleFull(tag_name_1[v]));
-            m_ui->sb_f_1->setValue(s[0]->getValue16(QString("Kf_%1").arg(tag_name_1[v].right(2))));
+            m_ui->sb_Zs_1->setValue(s[1]->scaleZero(tag_name_1[v]));
+            m_ui->sb_Fs_1->setValue(s[1]->scaleFull(tag_name_1[v]));
+            m_ui->sb_f_1->setValue(s[1]->getValue16(QString("Kf_%1").arg(tag_name_1[v].right(2))));
         }
     }
 
@@ -167,9 +174,9 @@ void SParamDialog::selectPage(int v)
     }
     else if(v==1)
     {
-        m_ui->bx_Teg_0->setCurrentIndex(1);
+        m_ui->bx_Teg_1->setCurrentIndex(0);
     }
-
+    selectTeg(0);
 }
 
 
