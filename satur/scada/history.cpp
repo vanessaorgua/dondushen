@@ -14,28 +14,12 @@ RHistorySelect::RHistorySelect(IoDev &src,struct trendinfo *tp,QWidget *p /*=NUL
 {
     m_ui->setupUi(this);
 
-    connect(m_ui->reg_1,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_2,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_3,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_4,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_5,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_6,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_7,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_8,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_9,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_10,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_11,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_12,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_13,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_14,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_15,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_16,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_17,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_18,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_19,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->reg_20,SIGNAL(clicked()),this,SLOT(slotAccept()));
-    connect(m_ui->bleding,SIGNAL(clicked()),this,SLOT(slotAccept()));
-
+    connect(m_ui->Cf_10cf,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->Cf_20cf,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->Cf_30cf,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->Cf_40cf,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->Cf_50cf,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend0trend,SIGNAL(clicked()),this,SLOT(slotAccept()));
 }
 
 RHistorySelect::~RHistorySelect()
@@ -45,16 +29,17 @@ RHistorySelect::~RHistorySelect()
 
 void RHistorySelect::slotAccept()
 {
-    nameTrend=sender()->objectName();
+    QStringList fl=sender()->objectName().split('0'); // символ 0 є розподілювачам імені таблиці та імені файлу із списком полів
+    nameTrend=fl[1];
     // тут треба завантажити дані в структуру 
 
     QFile f(QString(":/text/%1").arg(nameTrend));
     QString t;
-    QStringList sl;
+    QStringList sl,sl2;
     QSettings set;
 
     TrendParam->host=set.value("/db/hostname","localhost").toString();
-    TrendParam->db=set.value("/db/dbname","lynovycya").toString();
+    TrendParam->db=set.value("/db/dbname","test").toString();
     TrendParam->user=set.value("/db/username","scada").toString();
     TrendParam->passwd=set.value("/db/passwd","").toString();
     
@@ -66,7 +51,11 @@ void RHistorySelect::slotAccept()
 
         for(i=0;!f.atEnd() && i<8;++i) // обмежети зчитування із файла кінцем файла або не більше як 8 рядків
 	{
-                TrendParam->fields[i]=t=QString::fromUtf8(f.readLine()).trimmed(); // прочитати назву поля
+                t=    QString::fromUtf8(f.readLine()).trimmed();
+                //qDebug() << t;
+                sl2=t.split('\t');
+
+                TrendParam->fields[i]=t=sl2[0]; // прочитати назву поля
                 if(s.getTags().contains(t)) // якщо задане поле знайдено
 		{
                     sl<< /*s.getText()[t].size() > 0 ? */s.getText()[t] /*: t */; // завантажити назву поля, якщо не знайдено - назву тега
@@ -85,27 +74,39 @@ void RHistorySelect::slotAccept()
 			}
 		}
 		else
-		{--i;} // можливо і поганий варіант яле якщо такого поля не знайдено тоді змінити лічильник циклів
+                {
+                    qDebug() << sl2;
+                    if(sl2.size()>3) // якщо дані є  в файлі конфігурації тоді зчитати їх звідти
+                    {
+                        TrendParam->fScale[i][0]=sl2[1].toDouble(); // прочитати що там є
+                        TrendParam->fScale[i][1]=sl2[2].toDouble(); //
+                        sl << sl2[3];
+                    }
+                    else
+                        --i;
+                } // можливо і поганий варіант яле якщо такого поля не знайдено тоді змінити лічильник циклів
 	}
 
+        //qDebug() << "----------";
 	TrendParam->numPlot=i; // завантажити кількість графіків
-	TrendParam->table="trend";
+        TrendParam->table=fl[0];
 	TrendParam->trend=sender()->objectName(); // Завантажити ім’я тренда
 	
 	TrendParam->trendHead=qobject_cast<QPushButton*>(sender())->text(); // заголовок тренда - те, що написано на кнопці
 	TrendParam->fieldHead = sl;
 
-	//qDebug() << "1 TrendParam->numPlot=" << TrendParam->numPlot;
-	//qDebug() << "2 TrendParam->table  =" << TrendParam->table;
-	//qDebug() << "3 TrendParam->trend  =" << TrendParam->trend; // Завантажити ім’я тренда
-	//for(i=0;i<TrendParam->numPlot;++i)
-	//    qDebug() << "4 TrendParam->fields[" << i << "]=" << TrendParam->fields[i];
+
+        //qDebug() << "1 TrendParam->numPlot=" << TrendParam->numPlot;
+        //qDebug() << "2 TrendParam->table  =" << TrendParam->table;
+        //qDebug() << "3 TrendParam->trend  =" << TrendParam->trend; // Завантажити ім’я тренда
+        //for(i=0;i<TrendParam->numPlot;++i)
+        //    qDebug() << "4 TrendParam->fields[" << i << "]=" << TrendParam->fields[i];
 	
-	//for(i=0;i<TrendParam->numPlot;++i)
-	//    qDebug() << "5 TrendParam->fScale["<<i<<"] =" << TrendParam->fScale[i][0] << TrendParam->fScale[i][1];
+        //for(i=0;i<TrendParam->numPlot;++i)
+        //    qDebug() << "5 TrendParam->fScale["<<i<<"] =" << TrendParam->fScale[i][0] << TrendParam->fScale[i][1];
 	    
-	//qDebug() << "6 TrendParam->trendHead=" << TrendParam->trendHead; // заголовок тренда - те, що написано на кнопці
-	//qDebug() << "7 TrendParam->fieldHead =" << TrendParam->fieldHead;
+        //qDebug() << "6 TrendParam->trendHead=" << TrendParam->trendHead; // заголовок тренда - те, що написано на кнопці
+        //qDebug() << "7 TrendParam->fieldHead =" << TrendParam->fieldHead;
 
 	f.close();
 	accept(); // для завершення роботи
