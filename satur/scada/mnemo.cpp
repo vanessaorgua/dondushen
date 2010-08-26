@@ -278,6 +278,7 @@ void Mnemo::updateDataRaw()
 
     foreach(QLineEdit *p,b_X0)
     {
+        qDebug() << p->objectName() << QString("X_%1").arg(p->objectName().right(2)) << s[0]->getValue16(QString("X_%1").arg(p->objectName().right(2)));
         p->setPalette(s[0]->getValue16(QString("X_%1").arg(p->objectName().right(2)))?pal_w:pal_y);
     }
 
@@ -288,7 +289,7 @@ void Mnemo::updateDataRaw()
 
     foreach(QPushButton* p,bnBl)
     {
-        p->setIcon(QIcon(QPixmap(s[0]->getValue16(p->objectName().right(p->objectName().size()-3))
+        p->setIcon(QIcon(QPixmap(s[1]->getValue16(p->objectName().right(p->objectName().size()-3))
                 ?":/pict/lib/valve_green_20x32.png":":/pict/lib/valve_off_20x32.png")));
     }
 
@@ -298,7 +299,7 @@ void Mnemo::updateDataRaw()
     m_ui->bb_X0_10->setIcon(QIcon(QPixmap(s[0]->getValue16("X_16")
                 ?":/pict/pump_r_g_25x29.png":":/pict/pump_r_r_25x29.png")));
 
-    m_ui->rb_Y_07->setIcon(QIcon(QPixmap(s[0]->getValue16("X_14")
+    m_ui->rb_Y_07->setIcon(QIcon(QPixmap(s[1]->getValue16("X_15")
                 ?":/pict/pump_l_g_25x29.png":":/pict/pump_l_r_25x29.png")));
 
 
