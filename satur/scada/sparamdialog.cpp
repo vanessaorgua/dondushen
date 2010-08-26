@@ -30,7 +30,7 @@ SParamDialog::SParamDialog(IoNetClient &src,QWidget *parent) :
 
     foreach(QString tag,s[1]->getTags().keys())
     {
-        if(s[0]->isScaleChange(tag))
+        if(s[1]->isScaleChange(tag))
             tag_name_1 << tag;
     }
 

@@ -39,7 +39,7 @@ private:
 
 
     // індикатори
-    QVector<QLCDNumber*> b_lcd,r_lcd;
+    QVector<QLineEdit*> b_lcd,r_lcd;
     QVector<QProgressBar*> b_pb,r_pb;
     QVector<QCheckBox*> b_cb,r_cb;
     QVector<QLineEdit*> b_X0,r_X0;

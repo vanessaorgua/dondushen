@@ -62,44 +62,44 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QWidget(p), m_ui(new Ui::mnemo),s(s
 
 
     b_lcd
-            << m_ui->bd_V_01
-            << m_ui->bd_V_02
-            << m_ui->bd_V_03
-            << m_ui->bd_V_04
-            << m_ui->bd_V_05
-            << m_ui->bd_V_06
-            << m_ui->bd_V_07
-            << m_ui->bd_V_08
-            << m_ui->bd_V_09
-            << m_ui->bd_V_10
-            << m_ui->bd_V_11
-            << m_ui->bd_V_12
-            << m_ui->bd_V_13
-            << m_ui->bd_V_14
-            << m_ui->bd_V_15
-            << m_ui->bd_V_16;
+            << m_ui->bl_V_01
+            << m_ui->bl_V_02
+            << m_ui->bl_V_03
+            << m_ui->bl_V_04
+            << m_ui->bl_V_05
+            << m_ui->bl_V_06
+            << m_ui->bl_V_07
+            << m_ui->bl_V_08
+            << m_ui->bl_V_09
+            << m_ui->bl_V_10
+            << m_ui->bl_V_11
+            << m_ui->bl_V_12
+            << m_ui->bl_V_13
+            << m_ui->bl_V_14
+            << m_ui->bl_V_15
+            << m_ui->bl_V_16;
     r_lcd
-            << m_ui->rd_V_01
-            << m_ui->rd_V_02
-            << m_ui->rd_V_03
-            << m_ui->rd_V_04
-            << m_ui->rd_V_05
-            << m_ui->rd_V_06
-            << m_ui->rd_V_07
+            << m_ui->rl_V_01
+            << m_ui->rl_V_02
+            << m_ui->rl_V_03
+            << m_ui->rl_V_04
+            << m_ui->rl_V_05
+            << m_ui->rl_V_06
+            << m_ui->rl_V_07
             //<< m_ui->r_V_08
-            << m_ui->rd_V_09
-            << m_ui->rd_V_10
-            << m_ui->rd_V_11
-            << m_ui->rd_V_12
-            << m_ui->rd_V_13
-            << m_ui->rd_V_14
-            << m_ui->rd_V_15
-            << m_ui->rd_V_16
-            << m_ui->rd_V_17
-            << m_ui->rd_V_18
-            << m_ui->rd_V_19
-            << m_ui->rd_V_20
-            << m_ui->rd_V_21;
+            << m_ui->rl_V_09
+            << m_ui->rl_V_10
+            << m_ui->rl_V_11
+            << m_ui->rl_V_12
+            << m_ui->rl_V_13
+            << m_ui->rl_V_14
+            << m_ui->rl_V_15
+            << m_ui->rl_V_16
+            << m_ui->rl_V_17
+            << m_ui->rl_V_18
+            << m_ui->rl_V_19
+            << m_ui->rl_V_20
+            << m_ui->rl_V_21;
 
     b_pb
             << m_ui->bp_V_10
@@ -278,7 +278,6 @@ void Mnemo::updateDataRaw()
 
     foreach(QLineEdit *p,b_X0)
     {
-        qDebug() << p->objectName() << QString("X_%1").arg(p->objectName().right(2)) << s[0]->getValue16(QString("X_%1").arg(p->objectName().right(2)));
         p->setPalette(s[0]->getValue16(QString("X_%1").arg(p->objectName().right(2)))?pal_w:pal_y);
     }
 
@@ -307,14 +306,51 @@ void Mnemo::updateDataRaw()
 
 void Mnemo::updateDataScaled() // слот обновляє дані на мнемосхемі
 {
-    foreach(QLCDNumber *p,b_lcd)
+    int fw=3,pr=0;
+    QString tag;
+    double d;
+    foreach(QLineEdit *p,b_lcd)
     {
-        p->display(s[0]->getValueScaled(p->objectName().right(p->objectName().size()-3)));
+        tag=p->objectName().right(p->objectName().size()-3);
+        d=s[0]->scaleFull(tag)-s[0]->scaleZero(tag);
+        if(d<=10.0)
+        {
+            fw=5;
+            pr=2;
+        }
+        else if(d<=50.0)
+        {
+            fw=4;
+            pr=1;
+        }
+        else
+        {
+            fw=3;
+            pr=0;
+        }
+        p->setText(QString("%1").arg(s[0]->getValueScaled(tag),fw,'f',pr));
     }
 
-    foreach(QLCDNumber *p,r_lcd)
+    foreach(QLineEdit *p,r_lcd)
     {
-        p->display(s[1]->getValueScaled(p->objectName().right(p->objectName().size()-3)));
+        tag=p->objectName().right(p->objectName().size()-3);
+        d=s[1]->scaleFull(tag)-s[1]->scaleZero(tag);
+        if(d<=10.0)
+        {
+            fw=5;
+            pr=2;
+        }
+        else if(d<=50.0)
+        {
+            fw=4;
+            pr=1;
+        }
+        else
+        {
+            fw=3;
+            pr=0;
+        }
+        p->setText(QString("%1").arg(s[1]->getValueScaled(tag),fw,'f',pr));
     }
 
     foreach(QLineEdit *p,b_X0)

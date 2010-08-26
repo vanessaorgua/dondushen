@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>3280</width>
-    <height>952</height>
+    <height>978</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -40,7 +40,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>650</y>
+     <y>690</y>
      <width>451</width>
      <height>281</height>
     </rect>
@@ -56,7 +56,7 @@
    <property name="geometry">
     <rect>
      <x>490</x>
-     <y>650</y>
+     <y>690</y>
      <width>451</width>
      <height>281</height>
     </rect>
@@ -72,7 +72,7 @@
    <property name="geometry">
     <rect>
      <x>950</x>
-     <y>650</y>
+     <y>690</y>
      <width>451</width>
      <height>281</height>
     </rect>
@@ -88,7 +88,7 @@
    <property name="geometry">
     <rect>
      <x>1410</x>
-     <y>650</y>
+     <y>690</y>
      <width>451</width>
      <height>281</height>
     </rect>
@@ -104,7 +104,7 @@
    <property name="geometry">
     <rect>
      <x>1870</x>
-     <y>650</y>
+     <y>690</y>
      <width>451</width>
      <height>281</height>
     </rect>
@@ -120,7 +120,7 @@
    <property name="geometry">
     <rect>
      <x>2330</x>
-     <y>650</y>
+     <y>690</y>
      <width>451</width>
      <height>281</height>
     </rect>
@@ -136,7 +136,7 @@
    <property name="geometry">
     <rect>
      <x>2790</x>
-     <y>650</y>
+     <y>690</y>
      <width>451</width>
      <height>281</height>
     </rect>
@@ -152,7 +152,7 @@
    <property name="geometry">
     <rect>
      <x>100</x>
-     <y>630</y>
+     <y>666</y>
      <width>251</width>
      <height>16</height>
     </rect>
@@ -165,7 +165,7 @@
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>630</y>
+     <y>666</y>
      <width>251</width>
      <height>16</height>
     </rect>
@@ -178,7 +178,7 @@
    <property name="geometry">
     <rect>
      <x>1060</x>
-     <y>630</y>
+     <y>666</y>
      <width>251</width>
      <height>16</height>
     </rect>
@@ -191,7 +191,7 @@
    <property name="geometry">
     <rect>
      <x>1530</x>
-     <y>630</y>
+     <y>666</y>
      <width>251</width>
      <height>16</height>
     </rect>
@@ -204,7 +204,7 @@
    <property name="geometry">
     <rect>
      <x>1970</x>
-     <y>635</y>
+     <y>671</y>
      <width>251</width>
      <height>16</height>
     </rect>
@@ -217,7 +217,7 @@
    <property name="geometry">
     <rect>
      <x>2530</x>
-     <y>631</y>
+     <y>667</y>
      <width>251</width>
      <height>16</height>
     </rect>
@@ -230,7 +230,7 @@
    <property name="geometry">
     <rect>
      <x>2880</x>
-     <y>634</y>
+     <y>670</y>
      <width>251</width>
      <height>16</height>
     </rect>
@@ -245,8 +245,13 @@
      <x>0</x>
      <y>0</y>
      <width>3251</width>
-     <height>630</height>
+     <height>661</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">QFrame
@@ -261,745 +266,6 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="QLCDNumber" name="bd_V_06">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>140</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="bd_V_07">
-    <property name="geometry">
-     <rect>
-      <x>716</x>
-      <y>470</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="bd_V_08">
-    <property name="geometry">
-     <rect>
-      <x>1704</x>
-      <y>470</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="bd_V_09">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>340</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="palette">
-     <palette>
-      <active>
-       <colorrole role="Base">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>128</red>
-          <green>128</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </active>
-      <inactive>
-       <colorrole role="Base">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>128</red>
-          <green>128</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </inactive>
-      <disabled>
-       <colorrole role="Base">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>244</red>
-          <green>244</green>
-          <blue>244</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </disabled>
-     </palette>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="bd_V_10">
-    <property name="geometry">
-     <rect>
-      <x>1625</x>
-      <y>488</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="bd_V_01">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>370</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="bd_V_02">
-    <property name="geometry">
-     <rect>
-      <x>1550</x>
-      <y>134</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="bd_V_03">
-    <property name="geometry">
-     <rect>
-      <x>274</x>
-      <y>210</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="bd_V_04">
-    <property name="geometry">
-     <rect>
-      <x>360</x>
-      <y>210</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="bd_V_05">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>210</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="bd_V_11">
-    <property name="geometry">
-     <rect>
-      <x>530</x>
-      <y>440</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="bd_V_12">
-    <property name="geometry">
-     <rect>
-      <x>3050</x>
-      <y>488</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="bd_V_13">
-    <property name="geometry">
-     <rect>
-      <x>2430</x>
-      <y>487</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="bd_V_14">
-    <property name="geometry">
-     <rect>
-      <x>1830</x>
-      <y>50</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="bd_V_15">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>160</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="bd_V_16">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>403</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_01">
-    <property name="geometry">
-     <rect>
-      <x>86</x>
-      <y>253</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_02">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>350</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_03">
-    <property name="geometry">
-     <rect>
-      <x>806</x>
-      <y>350</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_04">
-    <property name="geometry">
-     <rect>
-      <x>1160</x>
-      <y>350</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_05">
-    <property name="geometry">
-     <rect>
-      <x>1320</x>
-      <y>350</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_06">
-    <property name="geometry">
-     <rect>
-      <x>1920</x>
-      <y>340</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_07">
-    <property name="geometry">
-     <rect>
-      <x>2020</x>
-      <y>340</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_09">
-    <property name="geometry">
-     <rect>
-      <x>1440</x>
-      <y>60</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_10">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>490</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_11">
-    <property name="geometry">
-     <rect>
-      <x>2570</x>
-      <y>70</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_15">
-    <property name="geometry">
-     <rect>
-      <x>1420</x>
-      <y>120</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_16">
-    <property name="geometry">
-     <rect>
-      <x>1470</x>
-      <y>490</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_17">
-    <property name="geometry">
-     <rect>
-      <x>1190</x>
-      <y>0</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_18">
-    <property name="geometry">
-     <rect>
-      <x>1130</x>
-      <y>410</y>
-      <width>46</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="smallDecimalPoint">
-     <bool>true</bool>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="digitCount">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="value" stdset="0">
-     <double>0.000000000000000</double>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>0</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_19">
-    <property name="geometry">
-     <rect>
-      <x>2240</x>
-      <y>370</y>
-      <width>46</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="smallDecimalPoint">
-     <bool>true</bool>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="digitCount">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="value" stdset="0">
-     <double>12.000000000000000</double>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>12</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_20">
-    <property name="geometry">
-     <rect>
-      <x>1390</x>
-      <y>0</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_21">
-    <property name="geometry">
-     <rect>
-      <x>1140</x>
-      <y>490</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_12">
-    <property name="geometry">
-     <rect>
-      <x>2810</x>
-      <y>70</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_13">
-    <property name="geometry">
-     <rect>
-      <x>2620</x>
-      <y>490</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="rd_V_14">
-    <property name="geometry">
-     <rect>
-      <x>1690</x>
-      <y>70</y>
-      <width>40</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="numDigits">
-     <number>3</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-    <property name="intValue" stdset="0">
-     <number>888</number>
-    </property>
-   </widget>
    <widget class="QProgressBar" name="bp_V_10">
     <property name="geometry">
      <rect>
@@ -1092,9 +358,9 @@
     <property name="geometry">
      <rect>
       <x>112</x>
-      <y>527</y>
+      <y>522</y>
       <width>16</width>
-      <height>55</height>
+      <height>58</height>
      </rect>
     </property>
     <property name="maximum">
@@ -1202,9 +468,9 @@
     <property name="geometry">
      <rect>
       <x>1374</x>
-      <y>112</y>
+      <y>133</y>
       <width>16</width>
-      <height>120</height>
+      <height>96</height>
      </rect>
     </property>
     <property name="maximum">
@@ -1268,7 +534,7 @@
     <property name="geometry">
      <rect>
       <x>397</x>
-      <y>250</y>
+      <y>224</y>
       <width>41</width>
       <height>28</height>
      </rect>
@@ -1299,7 +565,7 @@ QPushButton:pressed
     <property name="geometry">
      <rect>
       <x>312</x>
-      <y>250</y>
+      <y>224</y>
       <width>41</width>
       <height>28</height>
      </rect>
@@ -1360,7 +626,7 @@ QPushButton:pressed
    <widget class="QPushButton" name="bb_X0_05">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>40</x>
       <y>342</y>
       <width>28</width>
       <height>41</height>
@@ -1816,13 +1082,16 @@ QPushButton:pressed
     <property name="geometry">
      <rect>
       <x>360</x>
-      <y>253</y>
+      <y>227</y>
       <width>36</width>
       <height>24</height>
      </rect>
     </property>
     <property name="text">
      <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
      <bool>true</bool>
@@ -1832,13 +1101,16 @@ QPushButton:pressed
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>253</y>
+      <y>227</y>
       <width>36</width>
       <height>24</height>
      </rect>
     </property>
     <property name="text">
      <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
      <bool>true</bool>
@@ -1872,6 +1144,9 @@ QPushButton:pressed
     <property name="text">
      <string>100</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
     <property name="readOnly">
      <bool>true</bool>
     </property>
@@ -1879,7 +1154,7 @@ QPushButton:pressed
    <widget class="QLineEdit" name="bl_X0_05">
     <property name="geometry">
      <rect>
-      <x>75</x>
+      <x>35</x>
       <y>384</y>
       <width>36</width>
       <height>24</height>
@@ -1887,6 +1162,9 @@ QPushButton:pressed
     </property>
     <property name="text">
      <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
      <bool>true</bool>
@@ -1904,6 +1182,9 @@ QPushButton:pressed
     <property name="text">
      <string>100</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
     <property name="readOnly">
      <bool>true</bool>
     </property>
@@ -1919,6 +1200,9 @@ QPushButton:pressed
     </property>
     <property name="text">
      <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
      <bool>true</bool>
@@ -1936,6 +1220,9 @@ QPushButton:pressed
     <property name="text">
      <string>100</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
     <property name="readOnly">
      <bool>true</bool>
     </property>
@@ -1951,6 +1238,9 @@ QPushButton:pressed
     </property>
     <property name="text">
      <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
      <bool>true</bool>
@@ -1968,6 +1258,9 @@ QPushButton:pressed
     <property name="text">
      <string>100</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
     <property name="readOnly">
      <bool>true</bool>
     </property>
@@ -1983,6 +1276,9 @@ QPushButton:pressed
     </property>
     <property name="text">
      <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
      <bool>true</bool>
@@ -2000,6 +1296,9 @@ QPushButton:pressed
     <property name="text">
      <string>100</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
     <property name="readOnly">
      <bool>true</bool>
     </property>
@@ -2015,6 +1314,9 @@ QPushButton:pressed
     </property>
     <property name="text">
      <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
      <bool>true</bool>
@@ -2032,6 +1334,9 @@ QPushButton:pressed
     <property name="text">
      <string>100</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
     <property name="readOnly">
      <bool>true</bool>
     </property>
@@ -2048,6 +1353,9 @@ QPushButton:pressed
     <property name="text">
      <string>100</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
     <property name="readOnly">
      <bool>true</bool>
     </property>
@@ -2063,6 +1371,9 @@ QPushButton:pressed
     </property>
     <property name="text">
      <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
      <bool>true</bool>
@@ -2894,7 +2205,7 @@ QCheckBox:indicator
     <property name="geometry">
      <rect>
       <x>417</x>
-      <y>226</y>
+      <y>200</y>
       <width>18</width>
       <height>20</height>
      </rect>
@@ -2930,7 +2241,7 @@ QCheckBox:indicator
     <property name="geometry">
      <rect>
       <x>332</x>
-      <y>226</y>
+      <y>200</y>
       <width>18</width>
       <height>20</height>
      </rect>
@@ -3037,7 +2348,7 @@ QCheckBox:indicator
    <widget class="QCheckBox" name="bc_AM_05">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>50</x>
       <y>320</y>
       <width>18</width>
       <height>20</height>
@@ -3721,8 +3032,1371 @@ QCheckBox:indicator
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>114</x>
-      <y>146</y>
+      <x>100</x>
+      <y>154</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>м3/ч</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bl_V_01">
+    <property name="geometry">
+     <rect>
+      <x>355</x>
+      <y>370</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bl_V_02">
+    <property name="geometry">
+     <rect>
+      <x>1550</x>
+      <y>130</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bl_V_03">
+    <property name="geometry">
+     <rect>
+      <x>321</x>
+      <y>253</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bl_V_04">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>253</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bl_V_05">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>253</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bl_V_06">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>150</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bl_V_07">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>440</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bl_V_08">
+    <property name="geometry">
+     <rect>
+      <x>1700</x>
+      <y>440</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bl_V_09">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>380</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bl_V_10">
+    <property name="geometry">
+     <rect>
+      <x>1625</x>
+      <y>496</y>
+      <width>36</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bl_V_11">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>450</y>
+      <width>36</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bl_V_12">
+    <property name="geometry">
+     <rect>
+      <x>3050</x>
+      <y>494</y>
+      <width>36</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bl_V_13">
+    <property name="geometry">
+     <rect>
+      <x>2430</x>
+      <y>494</y>
+      <width>36</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bl_V_14">
+    <property name="geometry">
+     <rect>
+      <x>1824</x>
+      <y>60</y>
+      <width>40</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>999</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bl_V_15">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>170</y>
+      <width>40</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bl_V_16">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>400</y>
+      <width>51</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>12.45</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_01">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>250</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_02">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>370</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_03">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>386</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_04">
+    <property name="geometry">
+     <rect>
+      <x>1154</x>
+      <y>355</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_05">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>355</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_06">
+    <property name="geometry">
+     <rect>
+      <x>1940</x>
+      <y>380</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_07">
+    <property name="geometry">
+     <rect>
+      <x>2020</x>
+      <y>380</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_09">
+    <property name="geometry">
+     <rect>
+      <x>1430</x>
+      <y>60</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_10">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>520</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_11">
+    <property name="geometry">
+     <rect>
+      <x>2570</x>
+      <y>70</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_12">
+    <property name="geometry">
+     <rect>
+      <x>2810</x>
+      <y>70</y>
+      <width>41</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_13">
+    <property name="geometry">
+     <rect>
+      <x>2621</x>
+      <y>494</y>
+      <width>36</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_14">
+    <property name="geometry">
+     <rect>
+      <x>1690</x>
+      <y>73</y>
+      <width>36</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_15">
+    <property name="geometry">
+     <rect>
+      <x>1364</x>
+      <y>109</y>
+      <width>36</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_16">
+    <property name="geometry">
+     <rect>
+      <x>1470</x>
+      <y>494</y>
+      <width>36</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_18">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>410</y>
+      <width>51</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>12.34</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_19">
+    <property name="geometry">
+     <rect>
+      <x>2240</x>
+      <y>370</y>
+      <width>51</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>12.34</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_21">
+    <property name="geometry">
+     <rect>
+      <x>1135</x>
+      <y>495</y>
+      <width>36</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_20">
+    <property name="geometry">
+     <rect>
+      <x>1470</x>
+      <y>7</y>
+      <width>36</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rl_V_17">
+    <property name="geometry">
+     <rect>
+      <x>1311</x>
+      <y>7</y>
+      <width>45</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DejaVu Sans</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferDefault</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>270</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>м3/ч</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>270</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>м3/ч</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>270</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>м3/ч</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>460</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>м3/ч</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>1710</x>
+      <y>460</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>м3/ч</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>1470</x>
+      <y>63</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>м3/ч</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_43">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>270</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>°С</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_44">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>390</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>°С</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_45">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>410</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>°С</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_46">
+    <property name="geometry">
+     <rect>
+      <x>1165</x>
+      <y>375</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>°С</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_47">
+    <property name="geometry">
+     <rect>
+      <x>1332</x>
+      <y>376</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>°С</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_48">
+    <property name="geometry">
+     <rect>
+      <x>1950</x>
+      <y>400</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>°С</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_49">
+    <property name="geometry">
+     <rect>
+      <x>2030</x>
+      <y>400</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>°С</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>1360</x>
+      <y>10</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>кПа</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>174</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>кПа</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>1864</x>
+      <y>63</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>кПа</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>1506</x>
+      <y>10</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>400</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>м3/ч</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>390</y>
       <width>31</width>
       <height>16</height>
      </rect>
