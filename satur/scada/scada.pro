@@ -52,7 +52,9 @@ QMAKE_LIBDIR += ../../../lib
 LIBS += -lrcada_client
 INCLUDEPATH += ../../../lib/include
 OTHER_FILES += text/alert.txt \
-    text/reg_2.txt
+    text/reg_2.txt \
+    text/reg_2.txt \
+    text/reg_1.txt
 win32:QTPLUGIN += qsvg
 win32:CONFIG += static
 PRE_TARGETDEPS += ../../../lib/librcada_client.a

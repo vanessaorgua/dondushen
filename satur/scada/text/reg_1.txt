@@ -1,12 +1,12 @@
-V_04	V_01		Spr_01	X0_01	SP_01			AM_01	Rej_01	Rev_01	Kpr_01	Ti_01	Td_01	Xmin_01	Xmax_01	K1_01	K2_01			Kkor_01	Витрата вап. мол. на хол. Дефекацію
-V_03	V_06		Spr_02	X0_02	SP_02			AM_02	Rej_02	Rev_02	Kpr_02	Ti_02	Td_02	Xmin_02	Xmax_02	K1_02	K2_02			Kkor_02	Витрата вапн. Молока на преддеф.
-V_05	V_08		Spr_03	X0_03	SP_03			AM_03	Rej_03	Rev_03	Kpr_03	Ti_03	Td_03	Xmin_03	Xmax_03	K1_03	K2_03			Kkor_03	Витрата вапн. Мол. На 2-у сатурацю
+V_04	V_06		Spr_01	X0_01	SP_01			AM_01	Rej_01	Rev_01	Kpr_01	Ti_01	Td_01	Xmin_01	Xmax_01	K1_01				Kkor_01	Витрата вап. мол. на хол. Дефекацію
+V_03	V_06		Spr_02	X0_02	SP_02			AM_02	Rej_02	Rev_02	Kpr_02	Ti_02	Td_02	Xmin_02	Xmax_02	K1_02				Kkor_02	Витрата вапн. Молока на преддеф.
+V_05	V_08		Spr_03	X0_03	SP_03			AM_03	Rej_03	Rev_03	Kpr_03	Ti_03	Td_03	Xmin_03	Xmax_03	K1_03				Kkor_03	Витрата вапн. Мол. На 2-у сатурацю
 V_15				X0_04	SP_04			AM_04		Rev_04	Kpr_04	Ti_04	Td_04	Xmin_04	Xmax_04						Тиск в колекторів вапняного молока
-V_09	V_06		Spr_05	X0_05	SP_05			AM_05	Rej_05	Rev_05	Kpr_05	Ti_05	Td_05	Xmin_05	Xmax_05	K1_05	K2_05			Kkor_05	Витрата соку повернення в преддеф.
-V_02	V_06		Spr_06	X0_06	SP_06			AM_06	Rej_06	Rev_06	Kpr_06	Ti_06	Td_06	Xmin_06	Xmax_06	K1_06	K2_06			Kkor_06	Витрата суспензії 1-ї сатурації
-V_07	V_07		Spr_07	X0_07	SP_07	SP2_07		AM_07	Rej_07	Rev_07	Kpr_07	Ti_07	Td_07	Xmin_07	Xmax_07	K1_07	K2_07			Kkor_07	Витрата соку з холодн. Дефек. (клап.)
-V_07	V_07		Spr_08	X0_08	SP_08	SP2_08		AM_08	Rej_08	Rev_08	Kpr_08	Ti_08	Td_08	Xmin_08	Xmax_08	K1_08	K2_08			Kkor_08	Витрата соку з холодн. Деф. (частотн)
-V_08	V_08		Spr_09	X0_09	SP_09	SP2_09		AM_09	Rej_09	Rev_09	Kpr_09	Ti_09	Td_09	Xmin_09	Xmax_09	K1_09	K2_09			Kkor_09	Витрата соку на дефек.2-ї сат.(клап)
-V_08	V_08		Spr_10	X0_10	SP_10	SP2_10		AM_10	Rej_10	Rev_10	Kpr_10	Ti_10	Td_10	Xmin_10	Xmax_10	K1_10	K2_10			Kkor_10	Витрата соку на дефек.2-ї сат.(част)
-V_03	V_01		Spr_11	X0_11	SP_11			AM_11	Rej_11	Rev_11	Kpr_11	Ti_11	Td_11	Xmin_11	Xmax_11	K1_11	K2_11			Kkor_11	Витрата вапн. Молока на преддеф.
-V_04	V_01		Spr_12	X0_12	SP_12			AM_12	Rej_12	Rev_12	Kpr_12	Ti_12	Td_12	Xmin_12	Xmax_12	K1_12	K2_12			Kkor_12	Витрата вап. мол. на хол. Дефекацію
+V_09	V_06		Spr_05	X0_05	SP_05			AM_05	Rej_05	Rev_05	Kpr_05	Ti_05	Td_05	Xmin_05	Xmax_05	K1_05				Kkor_05	Витрата соку повернення в преддеф.
+V_02	V_06		Spr_06	X0_06	SP_06			AM_06	Rej_06	Rev_06	Kpr_06	Ti_06	Td_06	Xmin_06	Xmax_06	K1_06				Kkor_06	Витрата суспензії 1-ї сатурації
+V_07	V_07		Spr_07	X0_07	SP_07	SP2_07		AM_07	Rej_07	Rev_07	Kpr_07	Ti_07	Td_07	Xmin_07	Xmax_07	K1_07				Kkor_07	Витрата соку з холодн. Дефек. (клап.)
+V_07	V_07		Spr_08	X0_08	SP_08	SP2_08		AM_08	Rej_08	Rev_08	Kpr_08	Ti_08	Td_08	Xmin_08	Xmax_08	K1_08				Kkor_08	Витрата соку з холодн. Деф. (частотн)
+V_08	V_08		Spr_09	X0_09	SP_09	SP2_09		AM_09	Rej_09	Rev_09	Kpr_09	Ti_09	Td_09	Xmin_09	Xmax_09	K1_09				Kkor_09	Витрата соку на дефек.2-ї сат.(клап)
+V_08	V_08		Spr_10	X0_10	SP_10	SP2_10		AM_10	Rej_10	Rev_10	Kpr_10	Ti_10	Td_10	Xmin_10	Xmax_10	K1_10				Kkor_10	Витрата соку на дефек.2-ї сат.(част)
+V_03	V_01		Spr_11	X0_11	SP_11			AM_11	Rej_11	Rev_11	Kpr_11	Ti_11	Td_11	Xmin_11	Xmax_11	K1_11				Kkor_11	Витрата вапн. Молока на преддеф.
+V_04	V_01		Spr_12	X0_12	SP_12			AM_12	Rej_12	Rev_12	Kpr_12	Ti_12	Td_12	Xmin_12	Xmax_12	K1_12				Kkor_12	Витрата вап. мол. на хол. Дефекацію

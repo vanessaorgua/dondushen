@@ -209,8 +209,8 @@ Xmin_11	349	Real	300	0	-
 Xmin_12	351	Real	300	0	-
 Xmax_11	353	Real	300	0	-
 Xmax_12	355	Real	300	0	-
-SP_11	357	Real	300	0	-
-SP_12	359	Real	300	0	-
+SP_11	357	Real	300	1	V_03
+SP_12	359	Real	300	1	V_04
 Kkor_11	361	Real	300	0	-
 Kkor_12	363	Real	300	0	-
 K1_11	365	Real	300	0	-

@@ -51,6 +51,7 @@ private:
     QVector<QPushButton*> bnBl;
 
     QVector<QStringList> trChTags;
+    QVector<int> nIo;
 };
 
 #endif

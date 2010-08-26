@@ -202,40 +202,45 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QWidget(p), m_ui(new Ui::mnemo),s(s
     // це сильно константне рішення
     QStringList stl;
     // 1 вапно на дефекацію
-    stl << "V_49" <<  "X_06" <<"SP_06" <<  "V_16" << "Spr_06" ;
+    stl << "V_04" << "SP_01" <<"X0_01" << "Spr_01" ;
     trChTags << stl;
+    nIo << 0;
 
     // 2 відкачка з холодного
     stl.clear();
-    stl << "V_37" <<	"X_18"	<< "SP_18"<< 	"Spr_18" <<	 "V_28"<<	"SP2_18";
+    stl << "V_07" << "SP_07" << "X0_07" << "Spr_07";
     trChTags << stl;
+    nIo << 0;
 
-      // 3 повернення соку 1 сатурації
+      // 3 рН першрї сатурації
     stl.clear();
-    stl << "V_46" <<	"X_03" << "SP_03" <<	"Spr_03" <<"V_16" <<	"V_48"  ;
+    stl << "V_18" <<"SP_06"<< "X0_06"  ;
     trChTags << stl;
+    nIo << 1;
 
-    //4 рН першрї сатурації
+    //4 повернення соку 1 сатурації
     stl.clear();
-    stl << "V_53" <<	"X_10"  <<"SP_10"<< "V_37";
+    stl << "V_09" << "SP_05" <<  "X0_05" <<  "Spr_05";
     trChTags << stl;
+    nIo << 0;
 
     //5 витрата на деф 2 сат
     stl.clear();
-    stl << "V_38" <<	"X_19" << "SP_19" <<  "V_27" <<	"Spr_19" ;
+    stl << "V_08" << "SP_09" << "X0_09" << "Spr_09" ;
     trChTags << stl;
-
+    nIo << 0;
 
     //6 рН 2 сатурації
     stl.clear();
-    stl << "V_54" <<	"X_11" <<"SP_11"<< "V_38" ;
+    stl << "V_19" <<	"SP_07" <<	"X0_07" ;
     trChTags << stl;
+    nIo << 1;
 
-    //7 витрата суспензії 2 сат
+    //7 Тиск СО2
     stl.clear();
-    stl << "V_48" <<	"X_05"  <<"SP_05" ;
+    stl << "V_17" << "SP_05" << "X0_05" ;
     trChTags << stl;
-
+    nIo << 1;
 
     QTimer *t = new QTimer(this);
     t->setInterval(5000);
@@ -372,7 +377,7 @@ void Mnemo::updateDataScaled() // слот обновляє дані на мне
 
 void Mnemo::updateTrendChart() // поновлення графіків
 {
-/*
+
     QVector<double> v;
     int i=0;
     foreach(QStringList str,trChTags)
@@ -381,12 +386,12 @@ void Mnemo::updateTrendChart() // поновлення графіків
         v.clear();
         foreach(QString t,str)
         {
-            v << s[0]->getValueFloat(t);
+            v << s[nIo[i]]->getValueFloat(t);
         }
         trc[i++]->addPoint(v);
 
     }
-*/
+
 }
 
 
