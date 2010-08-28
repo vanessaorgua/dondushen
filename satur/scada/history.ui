@@ -216,6 +216,13 @@
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_3">
          <item>
+          <widget class="QPushButton" name="trend2_bleding">
+           <property name="text">
+            <string>bleding</string>
+           </property>
+          </widget>
+         </item>
+         <item>
           <spacer name="verticalSpacer_3">
            <property name="orientation">
             <enum>Qt::Vertical</enum>

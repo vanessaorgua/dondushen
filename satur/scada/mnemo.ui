@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>3280</width>
+    <width>3244</width>
     <height>993</height>
    </rect>
   </property>
@@ -18,7 +18,7 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>3280</width>
+    <width>3244</width>
     <height>952</height>
    </size>
   </property>
@@ -231,7 +231,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>3251</width>
+     <width>3239</width>
      <height>661</height>
     </rect>
    </property>
@@ -279,9 +279,9 @@
     <property name="geometry">
      <rect>
       <x>550</x>
-      <y>480</y>
+      <y>500</y>
       <width>16</width>
-      <height>121</height>
+      <height>100</height>
      </rect>
     </property>
     <property name="maximum">
@@ -2335,8 +2335,8 @@ QCheckBox:indicator
    <widget class="QCheckBox" name="bc_AM_05">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>320</y>
+      <x>70</x>
+      <y>343</y>
       <width>18</width>
       <height>20</height>
      </rect>
@@ -3028,6 +3028,9 @@ QCheckBox:indicator
     <property name="text">
      <string>м3/ч</string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLineEdit" name="bl_V_01">
     <property name="geometry">
@@ -3156,8 +3159,8 @@ QCheckBox:indicator
    <widget class="QLineEdit" name="bl_V_05">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>253</y>
+      <x>543</x>
+      <y>276</y>
       <width>41</width>
       <height>24</height>
      </rect>
@@ -3343,7 +3346,7 @@ QCheckBox:indicator
     <property name="geometry">
      <rect>
       <x>540</x>
-      <y>450</y>
+      <y>475</y>
       <width>36</width>
       <height>24</height>
      </rect>
@@ -4157,6 +4160,9 @@ QCheckBox:indicator
     <property name="text">
      <string>м3/ч</string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_10">
     <property name="geometry">
@@ -4170,18 +4176,24 @@ QCheckBox:indicator
     <property name="text">
      <string>м3/ч</string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>270</y>
+      <x>550</x>
+      <y>293</y>
       <width>31</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
      <string>м3/ч</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_12">
@@ -4196,6 +4208,9 @@ QCheckBox:indicator
     <property name="text">
      <string>м3/ч</string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_13">
     <property name="geometry">
@@ -4208,6 +4223,9 @@ QCheckBox:indicator
     </property>
     <property name="text">
      <string>м3/ч</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_14">
@@ -4222,6 +4240,9 @@ QCheckBox:indicator
     <property name="text">
      <string>м3/ч</string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_43">
     <property name="geometry">
@@ -4234,6 +4255,9 @@ QCheckBox:indicator
     </property>
     <property name="text">
      <string>°С</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_44">
@@ -4248,6 +4272,9 @@ QCheckBox:indicator
     <property name="text">
      <string>°С</string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_45">
     <property name="geometry">
@@ -4260,6 +4287,9 @@ QCheckBox:indicator
     </property>
     <property name="text">
      <string>°С</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_46">
@@ -4274,6 +4304,9 @@ QCheckBox:indicator
     <property name="text">
      <string>°С</string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_47">
     <property name="geometry">
@@ -4286,6 +4319,9 @@ QCheckBox:indicator
     </property>
     <property name="text">
      <string>°С</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_48">
@@ -4300,6 +4336,9 @@ QCheckBox:indicator
     <property name="text">
      <string>°С</string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_49">
     <property name="geometry">
@@ -4312,6 +4351,9 @@ QCheckBox:indicator
     </property>
     <property name="text">
      <string>°С</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_15">
@@ -4326,6 +4368,9 @@ QCheckBox:indicator
     <property name="text">
      <string>кПа</string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_16">
     <property name="geometry">
@@ -4338,6 +4383,9 @@ QCheckBox:indicator
     </property>
     <property name="text">
      <string>кПа</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_17">
@@ -4352,6 +4400,9 @@ QCheckBox:indicator
     <property name="text">
      <string>кПа</string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_18">
     <property name="geometry">
@@ -4364,6 +4415,9 @@ QCheckBox:indicator
     </property>
     <property name="text">
      <string>%</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_19">
@@ -4378,6 +4432,9 @@ QCheckBox:indicator
     <property name="text">
      <string>м3/ч</string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_20">
     <property name="geometry">
@@ -4390,6 +4447,736 @@ QCheckBox:indicator
     </property>
     <property name="text">
      <string>м3/ч</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>435</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bleding apparats</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>466</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>a</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>118</x>
+      <y>466</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>b</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>138</x>
+      <y>466</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>c</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_25">
+    <property name="geometry">
+     <rect>
+      <x>158</x>
+      <y>466</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>d</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_26">
+    <property name="geometry">
+     <rect>
+      <x>177</x>
+      <y>466</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>g</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>120</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Diffuzion juice</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_28">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Juice return</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_29">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>160</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lime</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_30">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>184</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lime return</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_31">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>250</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lime to 2 sat.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_32">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>440</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cool defecator</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_33">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>230</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hot def #1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_34">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>230</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hot def #2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_35">
+    <property name="geometry">
+     <rect>
+      <x>1032</x>
+      <y>220</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Saturator 1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_36">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>19</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>To atmosfera</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_37">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>610</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Juice 1 sat.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_38">
+    <property name="geometry">
+     <rect>
+      <x>1330</x>
+      <y>50</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Collector non f. Juice 1 sat.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_39">
+    <property name="geometry">
+     <rect>
+      <x>1410</x>
+      <y>223</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Filters P9-UFL</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_40">
+    <property name="geometry">
+     <rect>
+      <x>1410</x>
+      <y>610</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Collector susp 1 sat.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_41">
+    <property name="geometry">
+     <rect>
+      <x>1590</x>
+      <y>610</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Collector fl. juice 1 sat.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_42">
+    <property name="geometry">
+     <rect>
+      <x>1630</x>
+      <y>40</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Presh coll. susp 1 sat.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_50">
+    <property name="geometry">
+     <rect>
+      <x>2138</x>
+      <y>180</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Saturator 2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_51">
+    <property name="geometry">
+     <rect>
+      <x>2050</x>
+      <y>190</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Defecator 2 sat.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_96">
+    <property name="geometry">
+     <rect>
+      <x>2184</x>
+      <y>504</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>g</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_97">
+    <property name="geometry">
+     <rect>
+      <x>2095</x>
+      <y>506</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>d</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_98">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>550</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>a</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_99">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>540</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>c</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_100">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>550</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>b</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_101">
+    <property name="geometry">
+     <rect>
+      <x>2340</x>
+      <y>130</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Chesspol 2 sat.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_102">
+    <property name="geometry">
+     <rect>
+      <x>2390</x>
+      <y>610</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>coll. chess. juice 2 sat.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_103">
+    <property name="geometry">
+     <rect>
+      <x>2520</x>
+      <y>30</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Presh coll. juice 2 sat.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_104">
+    <property name="geometry">
+     <rect>
+      <x>2570</x>
+      <y>220</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Filters FiLS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_105">
+    <property name="geometry">
+     <rect>
+      <x>2810</x>
+      <y>220</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Filters FiLS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_106">
+    <property name="geometry">
+     <rect>
+      <x>2580</x>
+      <y>610</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Coll. susp 2 sat.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_107">
+    <property name="geometry">
+     <rect>
+      <x>3000</x>
+      <y>610</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Coll. juice to VS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_108">
+    <property name="geometry">
+     <rect>
+      <x>2760</x>
+      <y>30</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Presh coll.  check filtering</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_109">
+    <property name="geometry">
+     <rect>
+      <x>3020</x>
+      <y>20</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Air presh</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_110">
+    <property name="geometry">
+     <rect>
+      <x>3090</x>
+      <y>440</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>To VS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_111">
+    <property name="geometry">
+     <rect>
+      <x>2960</x>
+      <y>140</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sulfitator</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
@@ -4409,8 +5196,6 @@ QCheckBox:indicator
  </widget>
  <resources>
   <include location="mnemo/mnemo.qrc"/>
-  <include location="../../../pict/lib/valves.qrc"/>
-  <include location="../../../lib/picture.qrc"/>
  </resources>
  <connections/>
 </ui>

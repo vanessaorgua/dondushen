@@ -29,9 +29,9 @@ int main(int argc,char **argv)
     pal.setColor(QPalette::Background,cl);
     main.setPalette(pal);
 
-    //QTranslator translator;
-    //translator.load("filters_"+QLocale::system().name(),":/translate");
-    //app.installTranslator(&translator);
+    QTranslator translator;
+    translator.load("scada_"+QLocale::system().name(),":/translate");
+    app.installTranslator(&translator);
 
     QTextCodec::setCodecForTr(QTextCodec::codecForName("UTF-8"));
     

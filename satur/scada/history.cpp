@@ -1,12 +1,12 @@
 #include "history.h"
-#include <iodev.h>
+#include "IoNetClient.h"
 #include "ui_history.h"
 
 #include <QDebug>
 
 
 
-RHistorySelect::RHistorySelect(IoDev &src,struct trendinfo *tp,QWidget *p /*=NULL*/) :
+RHistorySelect::RHistorySelect(IoNetClient &src,struct trendinfo *tp,QWidget *p /*=NULL*/) :
         QDialog(p),
         s(src),
         TrendParam(tp),
@@ -35,6 +35,8 @@ RHistorySelect::RHistorySelect(IoDev &src,struct trendinfo *tp,QWidget *p /*=NUL
     connect(m_ui->trend2_reg206,SIGNAL(clicked()),this,SLOT(slotAccept()));
     connect(m_ui->trend2_reg207,SIGNAL(clicked()),this,SLOT(slotAccept()));
 
+    connect(m_ui->trend2_bleding,SIGNAL(clicked()),this,SLOT(slotAccept()));
+
 }
 
 RHistorySelect::~RHistorySelect()
@@ -52,6 +54,8 @@ void RHistorySelect::slotAccept()
     QString t;
     QStringList sl,sl2;
     QSettings set;
+
+    int nIo = sender()->objectName().mid(5,1).toInt()-1;
 
     TrendParam->host=set.value("/db/hostname","localhost").toString();
     TrendParam->db=set.value("/db/dbname","test").toString();
@@ -71,15 +75,15 @@ void RHistorySelect::slotAccept()
                 sl2=t.split('\t');
 
                 TrendParam->fields[i]=t=sl2[0]; // прочитати назву поля
-                if(s.getTags().contains(t)) // якщо задане поле знайдено
+                if(s[nIo]->getTags().contains(t)) // якщо задане поле знайдено
 		{
-                    sl<< /*s.getText()[t].size() > 0 ? */s.getText()[t] /*: t */; // завантажити назву поля, якщо не знайдено - назву тега
+                    sl<< /*s.getText()[t].size() > 0 ? */s[nIo]->getText()[t] /*: t */; // завантажити назву поля, якщо не знайдено - назву тега
 
 
-                    TrendParam->fScale[i][0]=s.scaleZero(t); // спробувати розпізнати тип поля та/чи значення шкали мінімуму
-                    TrendParam->fScale[i][1]=s.scaleFull(t); // спробувати розпізнати тип поля та/чи значення шкали мінімуму
+                    TrendParam->fScale[i][0]=s[nIo]->scaleZero(t); // спробувати розпізнати тип поля та/чи значення шкали мінімуму
+                    TrendParam->fScale[i][1]=s[nIo]->scaleFull(t); // спробувати розпізнати тип поля та/чи значення шкали мінімуму
 
-                     if(s.fieldType(t)==1) // якщо дискретний сигнал
+                     if(s[nIo]->fieldType(t)==1) // якщо дискретний сигнал
                     {
 			    // змінити тип поля
                             TrendParam->fields[i]=QString("((%1!=0)*454+%2)").arg(t).arg(i*499);
