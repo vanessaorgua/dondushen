@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>306</width>
-    <height>284</height>
+    <width>324</width>
+    <height>288</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>dlgPumpCtrl</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_3">
    <item row="0" column="0" colspan="2">
@@ -107,7 +107,7 @@
           </rect>
          </property>
          <property name="whatsThis">
-          <string>Постійне завдання на перший параметер</string>
+          <string>Maximum</string>
          </property>
          <property name="styleSheet">
           <string notr="true">QSlider::groove:vertical {
@@ -163,7 +163,7 @@
           </rect>
          </property>
          <property name="whatsThis">
-          <string>Розрахункове завдання</string>
+          <string>Minimum</string>
          </property>
          <property name="styleSheet">
           <string notr="true">QSlider::groove:vertical {

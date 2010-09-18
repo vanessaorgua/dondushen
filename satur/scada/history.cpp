@@ -27,6 +27,13 @@ RHistorySelect::RHistorySelect(IoNetClient &src,struct trendinfo *tp,QWidget *p 
     connect(m_ui->trend1_reg111,SIGNAL(clicked()),this,SLOT(slotAccept()));
     connect(m_ui->trend1_reg112,SIGNAL(clicked()),this,SLOT(slotAccept()));
 
+    connect(m_ui->trend1_flow11,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend1_flow12,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend1_level11,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend1_presh11,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend1_ph11,SIGNAL(clicked()),this,SLOT(slotAccept()));
+
+
     connect(m_ui->trend2_reg201,SIGNAL(clicked()),this,SLOT(slotAccept()));
     connect(m_ui->trend2_reg202,SIGNAL(clicked()),this,SLOT(slotAccept()));
     connect(m_ui->trend2_reg203,SIGNAL(clicked()),this,SLOT(slotAccept()));
@@ -36,6 +43,11 @@ RHistorySelect::RHistorySelect(IoNetClient &src,struct trendinfo *tp,QWidget *p 
     connect(m_ui->trend2_reg207,SIGNAL(clicked()),this,SLOT(slotAccept()));
 
     connect(m_ui->trend2_bleding,SIGNAL(clicked()),this,SLOT(slotAccept()));
+
+
+    connect(m_ui->trend2_flow21,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend2_level21,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend2_other21,SIGNAL(clicked()),this,SLOT(slotAccept()));
 
 }
 

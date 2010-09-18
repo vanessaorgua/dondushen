@@ -3,6 +3,7 @@
     <file>CessPool.svg</file>
     <file>mnemo.svg</file>
     <file>pumpCtrl.svg</file>
+    <file>legend.svg</file>
   </qresource>
   <qresource prefix="slider">
     <file>../../../../pict/SP_1.png</file>
@@ -25,6 +26,8 @@
     <file>../../../../pict/lamp_r_16x16.png</file>
     <file>../../../../pict/lib/valve_green_20x32.png</file>
     <file>../../../../pict/lib/valve_off_20x32.png</file>
+    <file>../../../../pict/lib/valve_green_h_20x32.png</file>
+    <file>../../../../pict/lib/valve_off_h_20x32.png</file>
     <file>../../../../pict/lib/lamp_off_16x16.png</file>
     <file>../../../../pict/lib/lamp_green_16x16.png</file>
     <file>../../../../pict/pump_l_g_25x29.png</file>

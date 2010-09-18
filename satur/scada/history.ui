@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>531</width>
-    <height>383</height>
+    <height>396</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -219,6 +219,62 @@
           <widget class="QPushButton" name="trend2_bleding">
            <property name="text">
             <string>bleding</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend1_flow11">
+           <property name="text">
+            <string>Расходы 1</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend1_flow12">
+           <property name="text">
+            <string>Расходы 2</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend2_flow21">
+           <property name="text">
+            <string>Расходы 3</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend1_level11">
+           <property name="text">
+            <string>Уровни 1</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend2_level21">
+           <property name="text">
+            <string>Уровни 2</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend1_presh11">
+           <property name="text">
+            <string>Давления</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend1_ph11">
+           <property name="text">
+            <string>рН преддеф.</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="trend2_other21">
+           <property name="text">
+            <string>Р, рН, %СО2</string>
            </property>
           </widget>
          </item>

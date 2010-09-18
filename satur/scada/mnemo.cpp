@@ -22,7 +22,7 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QWidget(p), m_ui(new Ui::mnemo),s(s
     connect(&s,SIGNAL(updateDataScaled()),this,SLOT(updateDataScaled())); // при отриманні нових даних, засвітити їх на картинці
 
     bnX0
-            << m_ui->bb_X0_01
+            << m_ui->bb_X0_12
             << m_ui->bb_X0_02
             << m_ui->bb_X0_03
             << m_ui->bb_X0_04
@@ -48,12 +48,13 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QWidget(p), m_ui(new Ui::mnemo),s(s
     connect(m_ui->rb_Y_07,SIGNAL(clicked()),this,SLOT(slotCallPumpCtrl()));
 
     bnBl
-            << m_ui->rb_X_08
             << m_ui->rb_X_09
             << m_ui->rb_X_10
             << m_ui->rb_X_11
             << m_ui->rb_X_12
             << m_ui->rb_X_13 ;
+
+    connect(m_ui->rb_X_08,SIGNAL(clicked()),this,SLOT(slotCallVb()));
 
     foreach(QPushButton *p,bnBl)
     {
@@ -116,7 +117,7 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QWidget(p), m_ui(new Ui::mnemo),s(s
             << m_ui->rp_V_16
             << m_ui->rp_V_21;
     b_X0
-            << m_ui->bl_X0_01
+            << m_ui->bl_X0_12
             << m_ui->bl_X0_02
             << m_ui->bl_X0_03
             << m_ui->bl_X0_04
@@ -150,7 +151,7 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QWidget(p), m_ui(new Ui::mnemo),s(s
             << m_ui->bc_X_22
             << m_ui->bc_X_23
             << m_ui->bc_X_24
-            << m_ui->bc_AM_01
+            << m_ui->bc_AM_12
             << m_ui->bc_AM_02
             << m_ui->bc_AM_03
             << m_ui->bc_AM_04
@@ -202,13 +203,13 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QWidget(p), m_ui(new Ui::mnemo),s(s
     // це сильно константне рішення
     QStringList stl;
     // 1 вапно на дефекацію
-    stl << "V_04" << "SP_01" <<"X0_01" << "Spr_01" ;
+    stl << "V_04" << "SP_01" <<"X0_01" << "Spr_01" << "V_06";
     trChTags << stl;
     nIo << 0;
 
     // 2 відкачка з холодного
     stl.clear();
-    stl << "V_07" << "SP_07" << "X0_07" << "Spr_07";
+    stl << "V_07" << "SP_07" << "X0_07" << "Spr_07" << "V_11";
     trChTags << stl;
     nIo << 0;
 
@@ -220,13 +221,13 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QWidget(p), m_ui(new Ui::mnemo),s(s
 
     //4 повернення соку 1 сатурації
     stl.clear();
-    stl << "V_09" << "SP_05" <<  "X0_05" <<  "Spr_05";
+    stl << "V_09" << "SP_05" <<  "X0_05" <<  "Spr_05" << "V_06";
     trChTags << stl;
     nIo << 0;
 
     //5 витрата на деф 2 сат
     stl.clear();
-    stl << "V_08" << "SP_09" << "X0_09" << "Spr_09" ;
+    stl << "V_08" << "SP_09" << "X0_09" << "Spr_09" << "V_10" ;
     trChTags << stl;
     nIo << 0;
 
@@ -247,6 +248,7 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QWidget(p), m_ui(new Ui::mnemo),s(s
     t->start();
     connect(t,SIGNAL(timeout()),this,SLOT(updateTrendChart()));
 }
+
 
 Mnemo::~Mnemo()
 {
@@ -291,17 +293,20 @@ void Mnemo::updateDataRaw()
         p->setPalette(s[1]->getValue16(QString("X_%1").arg(p->objectName().right(2)))?pal_w:pal_y);
     }
 
+     m_ui->rb_X_08->setIcon(QIcon(QPixmap(s[1]->getValue16("X_08")
+                                          ?":/pict/lib/valve_green_h_20x32.png":":/pict/lib/valve_off_h_20x32.png")));
+
     foreach(QPushButton* p,bnBl)
     {
         p->setIcon(QIcon(QPixmap(s[1]->getValue16(p->objectName().right(p->objectName().size()-3))
-                ?":/pict/lib/valve_green_20x32.png":":/pict/lib/valve_off_20x32.png")));
+                                 ?":/pict/lib/valve_green_20x32.png":":/pict/lib/valve_off_20x32.png")));
     }
 
     m_ui->bb_X0_08->setIcon(QIcon(QPixmap(s[0]->getValue16("X_12")
-                ?":/pict/pump_r_g_25x29.png":":/pict/pump_r_r_25x29.png")));
+                ?":/pict/pump_r_r_25x29.png":":/pict/pump_r_g_25x29.png")));
 
     m_ui->bb_X0_10->setIcon(QIcon(QPixmap(s[0]->getValue16("X_16")
-                ?":/pict/pump_r_g_25x29.png":":/pict/pump_r_r_25x29.png")));
+                ?":/pict/pump_r_r_25x29.png":":/pict/pump_r_g_25x29.png")));
 
     m_ui->rb_Y_07->setIcon(QIcon(QPixmap(s[1]->getValue16("X_15")
                 ?":/pict/pump_l_g_25x29.png":":/pict/pump_l_r_25x29.png")));

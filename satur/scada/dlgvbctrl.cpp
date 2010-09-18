@@ -21,6 +21,7 @@ dlgVbCtrl::dlgVbCtrl(IoDev &source , int nValve , QWidget *parent) :
     connect(ui->en_p,SIGNAL(currentIndexChanged(int)),this,SLOT(slotSet(int)));
     connect(ui->Q,SIGNAL(clicked()),this,SLOT(slotSet()));
 
+    ui->Q->blockSignals(ui->en_p->currentIndex());
 
 }
 
@@ -54,6 +55,7 @@ void dlgVbCtrl::slotUpdate()
 void dlgVbCtrl::slotSet(int v)
 {
     src.sendValue(QString("en_p_%1").arg(nI,2,10,QChar('0')),qint16(-v));
+    ui->Q->blockSignals(ui->en_p->currentIndex());
 }
 
 void dlgVbCtrl::slotSet()

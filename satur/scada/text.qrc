@@ -26,10 +26,16 @@
         <file>text/reg206</file>
         <file>text/reg207</file>
         <file>text/bleding</file>
+        <file>text/flow11</file>
+        <file>text/flow12</file>
+        <file>text/flow21</file>
+        <file>text/level11</file>
+        <file>text/level21</file>
+        <file>text/other21</file>
+        <file>text/ph11</file>
+        <file>text/presh11</file>
     </qresource>
-
     <qresource prefix="/translate">
         <file>scada_ru.qm</file>
     </qresource>
-
 </RCC>
