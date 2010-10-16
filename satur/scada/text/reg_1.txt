@@ -1,5 +1,5 @@
-V_04	V_06		Spr_01	X0_01	SP_01			AM_01	Rej_01	Rev_01	Kpr_01	Ti_01	Td_01	Xmin_01	Xmax_01	K1_01				Kkor_01	Расход изв.мол.на осн. деф.
-V_03	V_06		Spr_02	X0_02	SP_02			AM_02	Rej_02	Rev_02	Kpr_02	Ti_02	Td_02	Xmin_02	Xmax_02	K1_02				Kkor_02	Расход изв. мол. на преддеф.
+V_04	V_01		Spr_01	X0_01	SP_01			AM_01	Rej_01	Rev_01	Kpr_01	Ti_01	Td_01	Xmin_01	Xmax_01	K1_01				Kkor_01	Расход изв.мол.на осн. деф.
+V_03	V_01		Spr_02	X0_02	SP_02			AM_02	Rej_02	Rev_02	Kpr_02	Ti_02	Td_02	Xmin_02	Xmax_02	K1_02				Kkor_02	Расход изв. мол. на преддеф.
 V_05	V_08		Spr_03	X0_03	SP_03			AM_03	Rej_03	Rev_03	Kpr_03	Ti_03	Td_03	Xmin_03	Xmax_03	K1_03				Kkor_03	Расход изв. мол. на 2 сат.
 V_15				X0_04	SP_04			AM_04		Rev_04	Kpr_04	Ti_04	Td_04	Xmin_04	Xmax_04						Давл. в кол. изв мол.
 V_09	V_06		Spr_05	X0_05	SP_05			AM_05	Rej_05	Rev_05	Kpr_05	Ti_05	Td_05	Xmin_05	Xmax_05	K1_05				Kkor_05	Расход сока возврата
@@ -8,5 +8,5 @@ V_07	V_11		Spr_07	X0_07	SP_07	SP2_07		AM_07	Rej_07	Rev_07	Kpr_07	Ti_07	Td_07	Xmi
 V_07	V_11		Spr_08	X0_08	SP_08	SP2_08		AM_08	Rej_08	Rev_08	Kpr_08	Ti_08	Td_08	Xmin_08	Xmax_08	K1_08				Kkor_08	Расход сока с хол. деф.(част.)
 V_08	V_10		Spr_09	X0_09	SP_09	SP2_09		AM_09	Rej_09	Rev_09	Kpr_09	Ti_09	Td_09	Xmin_09	Xmax_09	K1_09				Kkor_09	Расход сока на деф. 2 сат.(кл.)
 V_08	V_10		Spr_10	X0_10	SP_10	SP2_10		AM_10	Rej_10	Rev_10	Kpr_10	Ti_10	Td_10	Xmin_10	Xmax_10	K1_10				Kkor_10	Расход сока на деф. 2 сат.(част.)
-V_03	V_01		Spr_11	X0_11	SP_11			AM_11	Rej_11	Rev_11	Kpr_11	Ti_11	Td_11	Xmin_11	Xmax_11	K1_11				Kkor_11	Расход изв. мол. на преддеф.
-V_04	V_01		Spr_12	X0_12	SP_12			AM_12	Rej_12	Rev_12	Kpr_12	Ti_12	Td_12	Xmin_12	Xmax_12	K1_12				Kkor_12	Расход изв.мол.на осн. деф.
+V_03	V_06		Spr_11	X0_11	SP_11			AM_11	Rej_11	Rev_11	Kpr_11	Ti_11	Td_11	Xmin_11	Xmax_11	K1_11				Kkor_11	Расход изв. мол. на преддеф.
+V_04	V_06		Spr_12	X0_12	SP_12			AM_12	Rej_12	Rev_12	Kpr_12	Ti_12	Td_12	Xmin_12	Xmax_12	K1_12				Kkor_12	Расход изв.мол.на осн. деф.

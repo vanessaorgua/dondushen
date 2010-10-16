@@ -961,7 +961,7 @@
      <enum>Qt::Vertical</enum>
     </property>
    </widget>
-   <widget class="QPushButton" name="bb_X0_12">
+   <widget class="QPushButton" name="bb_X0_01">
     <property name="geometry">
      <rect>
       <x>675</x>
@@ -1509,7 +1509,7 @@ QPushButton:pressed
      <string/>
     </property>
    </widget>
-   <widget class="QLineEdit" name="bl_X0_12">
+   <widget class="QLineEdit" name="bl_X0_01">
     <property name="geometry">
      <rect>
       <x>638</x>
@@ -2632,7 +2632,7 @@ QCheckBox:indicator
      <string>CheckBox</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="bc_AM_12">
+   <widget class="QCheckBox" name="bc_AM_01">
     <property name="geometry">
      <rect>
       <x>695</x>
@@ -3208,7 +3208,7 @@ QCheckBox:indicator
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QCheckBox" name="rc_AM_Q_09">
+   <widget class="QCheckBox" name="rc_Am_Q_09">
     <property name="geometry">
      <rect>
       <x>35</x>

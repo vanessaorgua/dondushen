@@ -2506,7 +2506,7 @@
        xlink:href="#linearGradient15660"
        id="linearGradient16723"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.04578174,0,0,0.10954353,883.57703,-771.30081)"
+       gradientTransform="matrix(0.04578174,0,0,0.186224,969.57703,-798.81138)"
        x1="257.42029"
        y1="404.41205"
        x2="322.94861"
@@ -5476,9 +5476,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.727439"
-     inkscape:cx="1513.018"
-     inkscape:cy="214.83325"
+     inkscape:zoom="2.909756"
+     inkscape:cx="650.41735"
+     inkscape:cy="122.01841"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -6274,22 +6274,6 @@
        style="font-size:74.21116638px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient16569);fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
        sodipodi:type="star" />
     <rect
-       transform="matrix(0,1,-1,0,0,0)"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient16687);fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-       id="rect16685"
-       width="3"
-       height="7"
-       x="983.36218"
-       y="-722" />
-    <rect
-       transform="scale(-1,-1)"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient16691);fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-       id="rect16689"
-       width="3"
-       height="88"
-       x="-722"
-       y="-983.36218" />
-    <rect
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient16695);fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
        id="rect16693"
        width="3"
@@ -6325,11 +6309,11 @@
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient16723);fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
        id="rect16713"
        width="3"
-       height="10"
-       x="895.36218"
+       height="17"
+       x="981.36218"
        y="-732" />
     <path
-       transform="matrix(0,-0.15800347,0.20271854,0,673.40899,908.23996)"
+       transform="matrix(0,-0.15800347,0.20271854,0,673.40899,994.23996)"
        d="m 72.009698,338.35589 -28.480388,-49.32947 56.96077,-10e-6 -28.480382,49.32948 z"
        inkscape:randomized="0"
        inkscape:rounded="0"

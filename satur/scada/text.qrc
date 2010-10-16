@@ -34,6 +34,7 @@
         <file>text/other21</file>
         <file>text/ph11</file>
         <file>text/presh11</file>
+        <file>text/term21</file>
     </qresource>
     <qresource prefix="/translate">
         <file>scada_ru.qm</file>

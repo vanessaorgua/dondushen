@@ -48,6 +48,7 @@ RHistorySelect::RHistorySelect(IoNetClient &src,struct trendinfo *tp,QWidget *p 
     connect(m_ui->trend2_flow21,SIGNAL(clicked()),this,SLOT(slotAccept()));
     connect(m_ui->trend2_level21,SIGNAL(clicked()),this,SLOT(slotAccept()));
     connect(m_ui->trend2_other21,SIGNAL(clicked()),this,SLOT(slotAccept()));
+    connect(m_ui->trend2_term21,SIGNAL(clicked()),this,SLOT(slotAccept()));
 
 }
 

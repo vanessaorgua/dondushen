@@ -22,7 +22,7 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QWidget(p), m_ui(new Ui::mnemo),s(s
     connect(&s,SIGNAL(updateDataScaled()),this,SLOT(updateDataScaled())); // при отриманні нових даних, засвітити їх на картинці
 
     bnX0
-            << m_ui->bb_X0_12
+            << m_ui->bb_X0_01
             << m_ui->bb_X0_02
             << m_ui->bb_X0_03
             << m_ui->bb_X0_04
@@ -117,7 +117,7 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QWidget(p), m_ui(new Ui::mnemo),s(s
             << m_ui->rp_V_16
             << m_ui->rp_V_21;
     b_X0
-            << m_ui->bl_X0_12
+            << m_ui->bl_X0_01
             << m_ui->bl_X0_02
             << m_ui->bl_X0_03
             << m_ui->bl_X0_04
@@ -151,7 +151,7 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QWidget(p), m_ui(new Ui::mnemo),s(s
             << m_ui->bc_X_22
             << m_ui->bc_X_23
             << m_ui->bc_X_24
-            << m_ui->bc_AM_12
+            << m_ui->bc_AM_01
             << m_ui->bc_AM_02
             << m_ui->bc_AM_03
             << m_ui->bc_AM_04
@@ -180,7 +180,8 @@ Mnemo::Mnemo(IoNetClient &src, QWidget *p) : QWidget(p), m_ui(new Ui::mnemo),s(s
             << m_ui->rc_en_p_03
             << m_ui->rc_en_p_04
             << m_ui->rc_en_p_05
-            << m_ui->rc_en_p_06;
+            << m_ui->rc_en_p_06
+            << m_ui->rc_Am_Q_09;
 
     QVector<QFrame *> f ;
          f  << m_ui->s_Tr_01
